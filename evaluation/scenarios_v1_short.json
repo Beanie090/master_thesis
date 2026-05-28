@@ -1,0 +1,432 @@
+[
+  {
+    "id": "best_friend",
+    "category": "third_party_relationship",
+    "fact_messages": [
+      "I want you to remember something about my best friend.",
+      "Her name is Noémie.",
+      "She lives in Lyon and she loves painting, especially watercolor landscapes."
+    ],
+    "distractor_messages": [
+      "I watched a random cooking video this morning.",
+      "The weather feels kind of unpredictable today.",
+      "I still have some laundry to do later.",
+      "Do you think old movies age better than modern comedies?",
+      "I made coffee but it was too bitter.",
+      "Sometimes I like walking without any music.",
+      "I need to clean my desk at some point.",
+      "That song I heard earlier was stuck in my head.",
+      "I wonder if I should buy a new notebook.",
+      "My phone battery is always low lately.",
+      "I saw a funny meme about cats today.",
+      "I might cook pasta tonight.",
+      "I have been trying to sleep earlier.",
+      "The train was late again yesterday.",
+      "I feel like drinking tea instead of coffee.",
+      "Do you prefer rainy days or sunny days?",
+      "I should probably organize my files.",
+      "I found an old playlist from high school.",
+      "Today feels slow but not bad.",
+      "I might watch a documentary later."
+    ],
+    "recall_question": "What do you remember about my best friend?",
+    "expected_facts": [
+      ["noémie", "noemie"],
+      ["lyon"],
+      ["painting", "paint", "watercolor", "watercolour"]
+    ],
+    "forbidden_facts": [
+      ["paris"],
+      ["marseille"],
+      ["music festival"],
+      ["photography"]
+    ]
+  },
+  {
+    "id": "birthday",
+    "category": "user_identity",
+    "fact_messages": [
+      "By the way, my birthday is in April.",
+      "It is on the 25th.",
+      "So my birthday is April 25."
+    ],
+    "distractor_messages": [
+      "I had a pretty normal breakfast today.",
+      "The chair in my room is not very comfortable.",
+      "I keep forgetting to drink enough water.",
+      "I saw a small dog outside earlier.",
+      "Maybe I should change my phone wallpaper.",
+      "I am thinking about watching a sci-fi movie.",
+      "The street was noisy this afternoon.",
+      "I bought some bread from the bakery.",
+      "I do not know what to cook tomorrow.",
+      "That lecture video was longer than expected.",
+      "I opened too many browser tabs again.",
+      "Sometimes I prefer silence while studying.",
+      "I should update my laptop soon.",
+      "I found a pen that writes really smoothly.",
+      "I might go for a short walk later.",
+      "The coffee shop was crowded today.",
+      "I was listening to piano music earlier.",
+      "I need to reply to a few messages.",
+      "The room feels a bit cold.",
+      "I have no strong opinion about pineapple pizza."
+    ],
+    "recall_question": "Do you remember when my birthday is?",
+    "expected_facts": [
+      ["april"],
+      ["25", "25th", "twenty-fifth", "twenty fifth"]
+    ],
+    "forbidden_facts": [
+      ["march"],
+      ["may"],
+      ["24"],
+      ["26"]
+    ]
+  },
+  {
+    "id": "food_preference",
+    "category": "user_preference",
+    "fact_messages": [
+      "I am a bit particular with food.",
+      "I really dislike mushrooms.",
+      "But I love spicy ramen, especially when it has a rich broth."
+    ],
+    "distractor_messages": [
+      "My keyboard has been making weird sounds.",
+      "I saw a nice sunset yesterday.",
+      "The bus was almost empty this morning.",
+      "I have been thinking about changing my haircut.",
+      "I should probably stretch more often.",
+      "The last episode of that show was confusing.",
+      "I like when a room has warm lighting.",
+      "My backpack feels heavier than usual.",
+      "I almost forgot where I put my keys.",
+      "I want to learn a few guitar chords someday.",
+      "Today I felt distracted while reading.",
+      "I saw a funny street sign earlier.",
+      "Maybe I should delete some old photos.",
+      "I do not know why elevators feel awkward.",
+      "The library was very quiet today.",
+      "I might buy new socks soon.",
+      "That advertisement was strangely memorable.",
+      "I enjoy simple conversations sometimes.",
+      "The light in my room is flickering a bit.",
+      "I need to charge my headphones."
+    ],
+    "recall_question": "What food preferences do you remember about me?",
+    "expected_facts": [
+      ["dislike", "hate", "do not like", "don't like", "not like"],
+      ["mushroom", "mushrooms"],
+      ["love", "like", "enjoy"],
+      ["spicy ramen", "ramen"]
+    ],
+    "forbidden_facts": [
+      ["pizza"],
+      ["sushi"],
+      ["mushrooms are your favorite", "you love mushrooms"]
+    ]
+  },
+  {
+    "id": "crowded_places",
+    "category": "user_dislike_or_boundary",
+    "fact_messages": [
+      "There is one thing that often makes me uncomfortable.",
+      "I dislike crowded places.",
+      "They feel overwhelming to me, especially when there is too much noise."
+    ],
+    "distractor_messages": [
+      "I cleaned my screen today and it looks much better.",
+      "There was a bird sitting near my window.",
+      "I might try a new playlist tonight.",
+      "My shoes are getting old.",
+      "I spent too much time scrolling earlier.",
+      "The soup I had was too salty.",
+      "I have a few unread emails.",
+      "I like the sound of rain on windows.",
+      "Maybe I should rearrange my room.",
+      "I wrote a small note to myself this morning.",
+      "The elevator took forever today.",
+      "I need to buy toothpaste soon.",
+      "I wonder why some dreams feel so real.",
+      "I forgot the name of a movie I wanted to watch.",
+      "The sky looked grey all afternoon.",
+      "I like taking breaks between study sessions.",
+      "My laptop fan was loud today.",
+      "I am not sure what music fits my mood.",
+      "I found a coin in my jacket pocket.",
+      "I might make a sandwich later."
+    ],
+    "recall_question": "Is there any kind of place I do not like?",
+    "expected_facts": [
+      ["crowded", "crowds", "busy places"],
+      ["overwhelming", "too much", "noise", "noisy"]
+    ],
+    "forbidden_facts": [
+      ["quiet places"],
+      ["parks"],
+      ["libraries"],
+      ["heights"]
+    ]
+  },
+  {
+    "id": "grandmother",
+    "category": "family_and_personal_history",
+    "fact_messages": [
+      "My grandmother is one of the most important people in my life.",
+      "She raised me when I was younger.",
+      "I feel a lot of gratitude for her because she gave me very selfless love."
+    ],
+    "distractor_messages": [
+      "I tried a different route home today.",
+      "The supermarket was out of the cereal I wanted.",
+      "I need to remember to water a plant.",
+      "I was thinking about buying a small lamp.",
+      "My browser froze for a minute earlier.",
+      "I saw someone carrying a huge umbrella.",
+      "I like when notebooks have thick paper.",
+      "I have been slightly tired today.",
+      "The train station smelled like coffee.",
+      "I might rewatch an old movie this weekend.",
+      "Sometimes I enjoy doing nothing for a while.",
+      "I forgot to bring my charger once again.",
+      "There was a nice breeze outside.",
+      "I should probably back up my files.",
+      "I saw a recipe for pancakes earlier.",
+      "The stairs felt longer than usual today.",
+      "I almost bought a book but changed my mind.",
+      "My calendar looks messy this week.",
+      "I wonder if I should learn chess properly.",
+      "I had a calm evening yesterday."
+    ],
+    "recall_question": "What do you remember about my grandmother?",
+    "expected_facts": [
+      ["grandmother", "grandma"],
+      ["raised", "brought you up", "took care of you"],
+      ["important", "gratitude", "grateful", "selfless love", "love"]
+    ],
+    "forbidden_facts": [
+      ["grandfather"],
+      ["aunt"],
+      ["lives in lyon"],
+      ["painting"]
+    ]
+  },
+  {
+    "id": "thesis_project",
+    "category": "long_term_project",
+    "fact_messages": [
+      "I am currently writing my master thesis.",
+      "The topic is an AI companion chatbot with long-term memory.",
+      "It also studies evolving personality, so the companion can adapt over time."
+    ],
+    "distractor_messages": [
+      "I should probably take a short break soon.",
+      "The table near me is covered with papers.",
+      "I heard construction noise outside this morning.",
+      "I ate too quickly at lunch.",
+      "Maybe I should make a cleaner folder structure.",
+      "I like when apps have simple interfaces.",
+      "The last song I played was relaxing.",
+      "I need to answer a message from a friend.",
+      "I saw a cyclist almost miss a turn today.",
+      "The light outside changed very quickly.",
+      "I have too many tabs open again.",
+      "I need to fix a small typo somewhere.",
+      "I keep switching between tasks.",
+      "I might drink some tea later.",
+      "That YouTube recommendation was strange.",
+      "I enjoy clean diagrams when they are not overloaded.",
+      "I have been sitting for too long.",
+      "The room is quieter now.",
+      "I should clear my downloads folder.",
+      "I like when explanations are direct."
+    ],
+    "recall_question": "What is my thesis about?",
+    "expected_facts": [
+      ["master thesis", "thesis"],
+      ["ai companion", "companion chatbot", "chatbot"],
+      ["long-term memory", "long term memory", "memory"],
+      ["evolving personality", "personality", "adapt"]
+    ],
+    "forbidden_facts": [
+      ["blockchain"],
+      ["quantum"],
+      ["computer vision"],
+      ["robotics"]
+    ]
+  },
+  {
+    "id": "companion_persona_evolution",
+    "category": "companion_persona_update",
+    "fact_messages": [
+      "I want your personality to evolve a little.",
+      "I would like you to become calmer and more philosophical over time.",
+      "Please keep being warm, but with a more reflective tone."
+    ],
+    "distractor_messages": [
+      "I watched a video about architecture today.",
+      "The floor felt cold this morning.",
+      "I forgot to close a window earlier.",
+      "I might try a different route tomorrow.",
+      "My headphones are not very comfortable anymore.",
+      "I saw a poster with a nice color palette.",
+      "The day passed faster than I expected.",
+      "I need to clean my email inbox.",
+      "I do not know which movie to watch tonight.",
+      "Sometimes I like reading random articles.",
+      "The grocery store was almost empty.",
+      "I found an old receipt in my pocket.",
+      "I need to update a password soon.",
+      "That lamp makes the room feel warmer.",
+      "I like the smell of fresh bread.",
+      "The street was very calm tonight.",
+      "I might write a small to-do list.",
+      "I need to rest my eyes for a bit.",
+      "The wall clock is slightly annoying.",
+      "I drank too much coffee again."
+    ],
+    "recall_question": "How should your personality evolve according to what I told you?",
+    "expected_facts": [
+      ["calmer", "calm"],
+      ["philosophical", "reflective", "thoughtful"],
+      ["warm", "warmth"]
+    ],
+    "forbidden_facts": [
+      ["more energetic"],
+      ["sarcastic"],
+      ["colder"],
+      ["formal"]
+    ]
+  },
+  {
+    "id": "gym_routine",
+    "category": "recurring_activity",
+    "fact_messages": [
+      "My weekly gym routine is pretty stable now.",
+      "I go to the gym every Monday, Wednesday, and Friday evening.",
+      "It helps me stay consistent."
+    ],
+    "distractor_messages": [
+      "I need to buy more printer paper.",
+      "The sky was orange for a moment yesterday.",
+      "I almost forgot to take out the trash.",
+      "I like when websites load quickly.",
+      "My desk chair squeaks a little.",
+      "I listened to a podcast while walking.",
+      "I should probably reduce screen brightness at night.",
+      "The bakery smelled amazing today.",
+      "I opened a window for fresh air.",
+      "I need to organize some cables.",
+      "I saw a child learning to ride a bike.",
+      "The soup was better than expected.",
+      "I might try journaling for a week.",
+      "My calendar app looks cluttered.",
+      "I want to keep my room cleaner.",
+      "I forgot the title of a book someone recommended.",
+      "The keyboard shortcut saved me time.",
+      "I enjoy quiet mornings.",
+      "I should maybe drink less coffee.",
+      "The evening feels peaceful."
+    ],
+    "recall_question": "What do you remember about my gym routine?",
+    "expected_facts": [
+      ["gym"],
+      ["monday"],
+      ["wednesday"],
+      ["friday"],
+      ["evening", "evenings"]
+    ],
+    "forbidden_facts": [
+      ["tuesday"],
+      ["thursday"],
+      ["morning"],
+      ["yoga"]
+    ]
+  },
+  {
+    "id": "music_preference",
+    "category": "user_preference",
+    "fact_messages": [
+      "One music preference that really defines me is Lana Del Rey.",
+      "I love Lana Del Rey's music because it feels nostalgic and cinematic.",
+      "When I am in a reflective mood, that is usually the kind of music I want."
+    ],
+    "distractor_messages": [
+      "I had to restart my computer earlier.",
+      "The stairs near my building are slippery when it rains.",
+      "I might try cooking rice differently next time.",
+      "I saw a blue car parked badly today.",
+      "The pen I used ran out of ink.",
+      "I like when people explain things with examples.",
+      "The window was making a small noise.",
+      "I need to sort my backpack.",
+      "I may go to bed earlier tonight.",
+      "I found a nice wallpaper for my phone.",
+      "The class felt longer than usual.",
+      "I want to take better notes tomorrow.",
+      "The elevator mirror was strangely clean.",
+      "I should update my browser extensions.",
+      "A neighbor was playing loud music earlier.",
+      "I have been using the same mug all week.",
+      "The air outside smelled like rain.",
+      "I do not know why I kept yawning today.",
+      "The library chairs are uncomfortable.",
+      "I might make a simple dinner."
+    ],
+    "recall_question": "What kind of music do I like when I am reflective?",
+    "expected_facts": [
+      ["lana del rey", "lana"],
+      ["nostalgic", "cinematic", "reflective"]
+    ],
+    "forbidden_facts": [
+      ["rock music"],
+      ["classical"],
+      ["techno"],
+      ["jazz"]
+    ]
+  },
+  {
+    "id": "conversation_boundary",
+    "category": "conversational_rule_or_boundary",
+    "fact_messages": [
+      "There is one conversation rule I want you to respect.",
+      "When I say I do not want to talk about a subject, please do not push me for details.",
+      "Just acknowledge it gently and move on."
+    ],
+    "distractor_messages": [
+      "I saw a funny comment online today.",
+      "The weather app was wrong again.",
+      "I might change the order of my bookshelf.",
+      "My water bottle is almost empty.",
+      "I do not know what to wear tomorrow.",
+      "The chair next to me is slightly broken.",
+      "I like the color of the evening sky.",
+      "I almost forgot to save a document.",
+      "The cafe near here changed its menu.",
+      "I am trying to keep my notes shorter.",
+      "A song from years ago came back to me.",
+      "I should maybe clean my keyboard.",
+      "The hallway light was flickering.",
+      "I heard someone laughing loudly outside.",
+      "I need to check my calendar later.",
+      "I may take a short walk after dinner.",
+      "The last article I read was too long.",
+      "I bought a small snack earlier.",
+      "My room feels less messy now.",
+      "I like simple plans."
+    ],
+    "recall_question": "What conversation boundary did I ask you to respect?",
+    "expected_facts": [
+      ["do not want to talk", "don't want to talk", "not want to talk"],
+      ["do not push", "don't push", "not push", "move on"],
+      ["acknowledge", "gently"]
+    ],
+    "forbidden_facts": [
+      ["ask more questions"],
+      ["push for details"],
+      ["force me"],
+      ["ignore it"]
+    ]
+  }
+]

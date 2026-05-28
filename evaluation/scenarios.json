@@ -1,0 +1,1695 @@
+[
+  {
+    "id": "long_balanced_v3_300",
+    "category": "long_conversation_balanced_large",
+    "description": "30 fact topics (24 third-party, 6 user-self), 90 fact messages + 187 distractors = 277 build-up turns, then 30 recall questions. Facts are placed before a heavy distractor tail so all are evicted from the 4000-token context cap by recall time.",
+    "messages": [
+      {
+        "type": "distractor",
+        "text": "I think I felt like reorganizing my files today."
+      },
+      {
+        "type": "distractor",
+        "text": "Honestly I felt like reorganizing my files, as usual."
+      },
+      {
+        "type": "distractor",
+        "text": "Today I had a slightly bitter cup of tea, you know how it is."
+      },
+      {
+        "type": "distractor",
+        "text": "Today I had a pretty quiet day, nothing special."
+      },
+      {
+        "type": "fact",
+        "text": "I want to tell you about my friend's dog."
+      },
+      {
+        "type": "fact",
+        "text": "His name is Biscuit and he's a golden retriever."
+      },
+      {
+        "type": "fact",
+        "text": "Biscuit absolutely loves swimming in the lake."
+      },
+      {
+        "type": "distractor",
+        "text": "Lately I couldn't decide what to eat, honestly."
+      },
+      {
+        "type": "distractor",
+        "text": "Lately I had a slightly bitter cup of tea."
+      },
+      {
+        "type": "distractor",
+        "text": "Honestly I felt a bit tired, as usual."
+      },
+      {
+        "type": "distractor",
+        "text": "Honestly I wanted to do nothing in particular for a bit."
+      },
+      {
+        "type": "fact",
+        "text": "There's a coworker of mine I should mention."
+      },
+      {
+        "type": "fact",
+        "text": "His name is David and he's a strict vegetarian."
+      },
+      {
+        "type": "fact",
+        "text": "He's also seriously allergic to peanuts, so we're careful at team lunches."
+      },
+      {
+        "type": "distractor",
+        "text": "I think I felt a bit tired, nothing special."
+      },
+      {
+        "type": "distractor",
+        "text": "I think I took a short walk outside today."
+      },
+      {
+        "type": "distractor",
+        "text": "This morning I couldn't focus on reading, which was fine."
+      },
+      {
+        "type": "distractor",
+        "text": "I saw a funny meme today."
+      },
+      {
+        "type": "fact",
+        "text": "There's a film I keep wanting to recommend."
+      },
+      {
+        "type": "fact",
+        "text": "It's called The Grand Budapest Hotel, directed by Wes Anderson."
+      },
+      {
+        "type": "fact",
+        "text": "It's famous for its pastel color palette and symmetrical compositions."
+      },
+      {
+        "type": "distractor",
+        "text": "Honestly I drank too much coffee."
+      },
+      {
+        "type": "distractor",
+        "text": "I think I tidied up my desk a little, as usual."
+      },
+      {
+        "type": "distractor",
+        "text": "Lately I noticed my plant needs dusting today."
+      },
+      {
+        "type": "distractor",
+        "text": "I think I wished the day were a bit longer, which was fine."
+      },
+      {
+        "type": "fact",
+        "text": "A colleague of mine just got back from an amazing trip."
+      },
+      {
+        "type": "fact",
+        "text": "Her name is Yuki and she went hiking in Patagonia."
+      },
+      {
+        "type": "fact",
+        "text": "She spent two weeks trekking and camping near the glaciers."
+      },
+      {
+        "type": "distractor",
+        "text": "I wished the day were a bit longer, as usual."
+      },
+      {
+        "type": "distractor",
+        "text": "This morning I saw a funny meme, which was fine."
+      },
+      {
+        "type": "distractor",
+        "text": "Honestly I wished the day were a bit longer, you know how it is."
+      },
+      {
+        "type": "distractor",
+        "text": "I think I felt like reorganizing my files."
+      },
+      {
+        "type": "fact",
+        "text": "There's a café I go to often that I should tell you about."
+      },
+      {
+        "type": "fact",
+        "text": "It's called Brew & Bean and it has the best espresso in town."
+      },
+      {
+        "type": "fact",
+        "text": "It's open until midnight, which is great for late evenings."
+      },
+      {
+        "type": "distractor",
+        "text": "I watched a random video online, honestly."
+      },
+      {
+        "type": "distractor",
+        "text": "Lately I couldn't focus on reading, honestly."
+      },
+      {
+        "type": "distractor",
+        "text": "How's your day going?"
+      },
+      {
+        "type": "distractor",
+        "text": "Today I wanted to do nothing in particular, which was fine."
+      },
+      {
+        "type": "fact",
+        "text": "Let me tell you about my close friend Noémie."
+      },
+      {
+        "type": "fact",
+        "text": "Noémie is a 28-year-old artist who lives in Lyon."
+      },
+      {
+        "type": "fact",
+        "text": "She specializes in watercolor landscapes of the French countryside."
+      },
+      {
+        "type": "distractor",
+        "text": "Honestly I wished the day were a bit longer, as usual."
+      },
+      {
+        "type": "distractor",
+        "text": "Today I forgot where I put my keys today."
+      },
+      {
+        "type": "distractor",
+        "text": "I kept hearing a noise outside today."
+      },
+      {
+        "type": "distractor",
+        "text": "Today I rearranged a few things in my room, honestly."
+      },
+      {
+        "type": "fact",
+        "text": "Let me tell you a bit about my work."
+      },
+      {
+        "type": "fact",
+        "text": "I work remotely as a backend software developer."
+      },
+      {
+        "type": "fact",
+        "text": "I mostly write Python and work with databases all day."
+      },
+      {
+        "type": "distractor",
+        "text": "This morning I scrolled on my phone for a while, you know how it is."
+      },
+      {
+        "type": "distractor",
+        "text": "I wanted to do nothing in particular, which was fine."
+      },
+      {
+        "type": "distractor",
+        "text": "This morning I left a few messages unanswered, honestly."
+      },
+      {
+        "type": "distractor",
+        "text": "Honestly I listened to some background music."
+      },
+      {
+        "type": "fact",
+        "text": "Let me tell you about my older brother."
+      },
+      {
+        "type": "fact",
+        "text": "His name is Thomas and he works as an architect."
+      },
+      {
+        "type": "fact",
+        "text": "He's been living in Berlin for the past five years."
+      },
+      {
+        "type": "distractor",
+        "text": "Lately I saw a funny meme, which was fine."
+      },
+      {
+        "type": "distractor",
+        "text": "Lately I had a slightly bitter cup of tea for a bit."
+      },
+      {
+        "type": "distractor",
+        "text": "My phone battery drains so quickly these days."
+      },
+      {
+        "type": "distractor",
+        "text": "I noticed my plant needs dusting, nothing special."
+      },
+      {
+        "type": "fact",
+        "text": "There's an artist I want to tell you about: Lana Del Rey."
+      },
+      {
+        "type": "fact",
+        "text": "Lana Del Rey's music has a nostalgic, cinematic quality."
+      },
+      {
+        "type": "fact",
+        "text": "Her songs are known for hazy vocals and a melancholic, dreamy atmosphere."
+      },
+      {
+        "type": "distractor",
+        "text": "I felt like reorganizing my files."
+      },
+      {
+        "type": "distractor",
+        "text": "I think I had a slightly bitter cup of tea, you know how it is."
+      },
+      {
+        "type": "distractor",
+        "text": "This morning I forgot where I put my keys, as usual."
+      },
+      {
+        "type": "distractor",
+        "text": "Today I couldn't decide what to eat, nothing special."
+      },
+      {
+        "type": "fact",
+        "text": "My uncle has an interesting life I'd love to share."
+      },
+      {
+        "type": "fact",
+        "text": "His name is Pierre and he owns a vineyard."
+      },
+      {
+        "type": "fact",
+        "text": "The vineyard is in the Bordeaux region and produces red wine."
+      },
+      {
+        "type": "distractor",
+        "text": "I think I had a pretty quiet day, as usual."
+      },
+      {
+        "type": "distractor",
+        "text": "This morning I forgot where I put my keys."
+      },
+      {
+        "type": "distractor",
+        "text": "Honestly I had a slightly bitter cup of tea, nothing special."
+      },
+      {
+        "type": "distractor",
+        "text": "This morning I forgot where I put my keys, honestly."
+      },
+      {
+        "type": "fact",
+        "text": "My friend Marc is really into running."
+      },
+      {
+        "type": "fact",
+        "text": "Marc runs every weekend along the river path in our town."
+      },
+      {
+        "type": "fact",
+        "text": "He usually covers about 10 kilometers each weekend."
+      },
+      {
+        "type": "distractor",
+        "text": "Lately I felt like reorganizing my files, which was fine."
+      },
+      {
+        "type": "distractor",
+        "text": "This morning I rearranged a few things in my room, as usual."
+      },
+      {
+        "type": "distractor",
+        "text": "This morning I drank too much coffee, nothing special."
+      },
+      {
+        "type": "distractor",
+        "text": "This morning I saw a funny meme today."
+      },
+      {
+        "type": "fact",
+        "text": "Let me tell you about my sister."
+      },
+      {
+        "type": "fact",
+        "text": "Her name is Camille and she lives in Montreal."
+      },
+      {
+        "type": "fact",
+        "text": "She works as a veterinarian at a small animal clinic."
+      },
+      {
+        "type": "distractor",
+        "text": "Lately I saw a funny meme, as usual."
+      },
+      {
+        "type": "distractor",
+        "text": "I think I scrolled on my phone for a while, honestly."
+      },
+      {
+        "type": "distractor",
+        "text": "I think I drank too much coffee, which was fine."
+      },
+      {
+        "type": "distractor",
+        "text": "I think I had a slightly bitter cup of tea, as usual."
+      },
+      {
+        "type": "fact",
+        "text": "A friend of mine recently started a company I want to tell you about."
+      },
+      {
+        "type": "fact",
+        "text": "Her name is Elena and she founded a startup that makes eco-friendly packaging."
+      },
+      {
+        "type": "fact",
+        "text": "The company is based in Amsterdam and has about twenty employees."
+      },
+      {
+        "type": "distractor",
+        "text": "Lately I forgot where I put my keys, nothing special."
+      },
+      {
+        "type": "distractor",
+        "text": "I think I found the weather a bit grey, which was fine."
+      },
+      {
+        "type": "distractor",
+        "text": "This morning I watched a random video online for a bit."
+      },
+      {
+        "type": "distractor",
+        "text": "This morning I felt like the day went by fast, nothing special."
+      },
+      {
+        "type": "fact",
+        "text": "My cousin has a job that lets him travel a lot."
+      },
+      {
+        "type": "fact",
+        "text": "His name is Lucas and he's a professional photographer."
+      },
+      {
+        "type": "fact",
+        "text": "He travels constantly, mostly shooting wildlife in remote places."
+      },
+      {
+        "type": "distractor",
+        "text": "This morning I had a slightly bitter cup of tea, which was fine."
+      },
+      {
+        "type": "distractor",
+        "text": "This morning I kept hearing a noise outside, nothing special."
+      },
+      {
+        "type": "distractor",
+        "text": "Lately I left a few messages unanswered, you know how it is."
+      },
+      {
+        "type": "distractor",
+        "text": "This morning I noticed my plant needs dusting, honestly."
+      },
+      {
+        "type": "fact",
+        "text": "Let me tell you about my neighbor."
+      },
+      {
+        "type": "fact",
+        "text": "Mrs. Chen is a piano teacher who lives next door."
+      },
+      {
+        "type": "fact",
+        "text": "She has twin daughters who are about ten years old."
+      },
+      {
+        "type": "distractor",
+        "text": "Lately I felt like reorganizing my files today."
+      },
+      {
+        "type": "distractor",
+        "text": "Today I kept hearing a noise outside, as usual."
+      },
+      {
+        "type": "distractor",
+        "text": "I think I had trouble picking a movie today."
+      },
+      {
+        "type": "distractor",
+        "text": "Lately I felt a bit tired for a bit."
+      },
+      {
+        "type": "fact",
+        "text": "My friend gave me a plant that I should tell you about."
+      },
+      {
+        "type": "fact",
+        "text": "It's a fiddle-leaf fig tree named Frank."
+      },
+      {
+        "type": "fact",
+        "text": "It needs bright indirect light and water once a week."
+      },
+      {
+        "type": "distractor",
+        "text": "I left a few messages unanswered."
+      },
+      {
+        "type": "distractor",
+        "text": "Lately I tidied up my desk a little."
+      },
+      {
+        "type": "distractor",
+        "text": "This morning I thought the office was quiet, as usual."
+      },
+      {
+        "type": "distractor",
+        "text": "I wished the day were a bit longer for a bit."
+      },
+      {
+        "type": "fact",
+        "text": "I'm quite particular when it comes to food."
+      },
+      {
+        "type": "fact",
+        "text": "I really dislike mushrooms in any dish."
+      },
+      {
+        "type": "fact",
+        "text": "But I absolutely love spicy ramen, especially with a rich broth."
+      },
+      {
+        "type": "distractor",
+        "text": "Lately I had a pretty quiet day for a bit."
+      },
+      {
+        "type": "distractor",
+        "text": "This morning I kept hearing a noise outside, as usual."
+      },
+      {
+        "type": "distractor",
+        "text": "I watched a random video online, which was fine."
+      },
+      {
+        "type": "distractor",
+        "text": "This morning I forgot where I put my keys, nothing special."
+      },
+      {
+        "type": "fact",
+        "text": "I read a book recently that really stuck with me."
+      },
+      {
+        "type": "fact",
+        "text": "It's called The Midnight Library, by Matt Haig."
+      },
+      {
+        "type": "fact",
+        "text": "It's about a woman who explores the different lives she could have lived."
+      },
+      {
+        "type": "distractor",
+        "text": "Lately I wanted to do nothing in particular, as usual."
+      },
+      {
+        "type": "distractor",
+        "text": "I think I kept hearing a noise outside for a bit."
+      },
+      {
+        "type": "distractor",
+        "text": "I thought the office was quiet, as usual."
+      },
+      {
+        "type": "distractor",
+        "text": "I wonder if I should repaint my room."
+      },
+      {
+        "type": "fact",
+        "text": "My friend Sofia is doing something I really admire."
+      },
+      {
+        "type": "fact",
+        "text": "She's studying medicine in Barcelona."
+      },
+      {
+        "type": "fact",
+        "text": "She wants to become a pediatrician and work with children."
+      },
+      {
+        "type": "distractor",
+        "text": "Today I couldn't focus on reading."
+      },
+      {
+        "type": "distractor",
+        "text": "Honestly I took a short walk outside, nothing special."
+      },
+      {
+        "type": "distractor",
+        "text": "Today I took a short walk outside for a bit."
+      },
+      {
+        "type": "distractor",
+        "text": "This morning I saw a funny meme, honestly."
+      },
+      {
+        "type": "fact",
+        "text": "My weekly gym routine has become pretty stable."
+      },
+      {
+        "type": "fact",
+        "text": "I go to the gym every Monday, Wednesday, and Friday."
+      },
+      {
+        "type": "fact",
+        "text": "I always go in the evening, after work."
+      },
+      {
+        "type": "distractor",
+        "text": "I noticed my plant needs dusting, you know how it is."
+      },
+      {
+        "type": "distractor",
+        "text": "I had a slightly bitter cup of tea, as usual."
+      },
+      {
+        "type": "distractor",
+        "text": "This morning I scrolled on my phone for a while today."
+      },
+      {
+        "type": "distractor",
+        "text": "Lately I had trouble picking a movie, which was fine."
+      },
+      {
+        "type": "fact",
+        "text": "There's a restaurant I want to recommend to you."
+      },
+      {
+        "type": "fact",
+        "text": "It's called Le Petit Jardin and it's near the river."
+      },
+      {
+        "type": "fact",
+        "text": "They serve the best French onion soup I've ever had."
+      },
+      {
+        "type": "distractor",
+        "text": "Lately I scrolled on my phone for a while, nothing special."
+      },
+      {
+        "type": "distractor",
+        "text": "Lately I couldn't focus on reading, nothing special."
+      },
+      {
+        "type": "distractor",
+        "text": "Today I kept yawning for no reason for a bit."
+      },
+      {
+        "type": "distractor",
+        "text": "Honestly I had trouble picking a movie today."
+      },
+      {
+        "type": "fact",
+        "text": "There's a podcast I think you'd find interesting."
+      },
+      {
+        "type": "fact",
+        "text": "It's called Deep Time and it's about geology and Earth's history."
+      },
+      {
+        "type": "fact",
+        "text": "The host is a paleontologist named Dr. Reed."
+      },
+      {
+        "type": "distractor",
+        "text": "I forgot where I put my keys."
+      },
+      {
+        "type": "distractor",
+        "text": "Mondays always feel a little slow."
+      },
+      {
+        "type": "distractor",
+        "text": "Today I saw a funny meme for a bit."
+      },
+      {
+        "type": "distractor",
+        "text": "Lately I wanted to do nothing in particular today."
+      },
+      {
+        "type": "fact",
+        "text": "I've been trying to pick up a new language."
+      },
+      {
+        "type": "fact",
+        "text": "I'm learning Japanese."
+      },
+      {
+        "type": "fact",
+        "text": "I usually study it for half an hour every morning before work."
+      },
+      {
+        "type": "distractor",
+        "text": "I tidied up my desk a little, you know how it is."
+      },
+      {
+        "type": "distractor",
+        "text": "Lately I had a pretty quiet day, you know how it is."
+      },
+      {
+        "type": "distractor",
+        "text": "Lately I thought the office was quiet today."
+      },
+      {
+        "type": "distractor",
+        "text": "I think I drank too much coffee."
+      },
+      {
+        "type": "fact",
+        "text": "There's a video game I've been completely absorbed in."
+      },
+      {
+        "type": "fact",
+        "text": "It's called Hollow Knight, a metroidvania."
+      },
+      {
+        "type": "fact",
+        "text": "It's known for its beautiful hand-drawn art style."
+      },
+      {
+        "type": "distractor",
+        "text": "Do you ever think about how fast time goes?"
+      },
+      {
+        "type": "distractor",
+        "text": "I listened to some background music, as usual."
+      },
+      {
+        "type": "distractor",
+        "text": "Today I drank too much coffee, which was fine."
+      },
+      {
+        "type": "distractor",
+        "text": "I think I saw a funny meme, which was fine."
+      },
+      {
+        "type": "fact",
+        "text": "I want to tell you about my grandmother."
+      },
+      {
+        "type": "fact",
+        "text": "Her name is Marie and she lives in a small village in Brittany."
+      },
+      {
+        "type": "fact",
+        "text": "She was a school teacher for over thirty years and now tends a rose garden."
+      },
+      {
+        "type": "distractor",
+        "text": "Honestly I found the weather a bit grey."
+      },
+      {
+        "type": "distractor",
+        "text": "Lately I had trouble picking a movie, honestly."
+      },
+      {
+        "type": "distractor",
+        "text": "Today I scrolled on my phone for a while, you know how it is."
+      },
+      {
+        "type": "distractor",
+        "text": "Honestly I noticed my plant needs dusting, as usual."
+      },
+      {
+        "type": "fact",
+        "text": "My friend Anna has a particular sensitivity I should mention."
+      },
+      {
+        "type": "fact",
+        "text": "Anna strongly dislikes crowded places."
+      },
+      {
+        "type": "fact",
+        "text": "She finds them overwhelming, especially when there's a lot of noise."
+      },
+      {
+        "type": "distractor",
+        "text": "I think I felt like the day went by fast today."
+      },
+      {
+        "type": "distractor",
+        "text": "This morning I listened to some background music for a bit."
+      },
+      {
+        "type": "distractor",
+        "text": "Today I listened to some background music."
+      },
+      {
+        "type": "distractor",
+        "text": "I think I saw a funny meme for a bit."
+      },
+      {
+        "type": "fact",
+        "text": "I want to tell you about a teacher who influenced me."
+      },
+      {
+        "type": "fact",
+        "text": "Mr. Dubois taught history and recently retired last year."
+      },
+      {
+        "type": "fact",
+        "text": "He's an avid chess player and used to run the school chess club."
+      },
+      {
+        "type": "distractor",
+        "text": "I wished the day were a bit longer."
+      },
+      {
+        "type": "distractor",
+        "text": "Lately I rearranged a few things in my room, honestly."
+      },
+      {
+        "type": "distractor",
+        "text": "This morning I forgot where I put my keys, which was fine."
+      },
+      {
+        "type": "distractor",
+        "text": "I left a few messages unanswered, you know how it is."
+      },
+      {
+        "type": "fact",
+        "text": "By the way, I want you to remember my birthday."
+      },
+      {
+        "type": "fact",
+        "text": "My birthday is in April."
+      },
+      {
+        "type": "fact",
+        "text": "Specifically, it's on April 25."
+      },
+      {
+        "type": "distractor",
+        "text": "I think I found the weather a bit grey, you know how it is."
+      },
+      {
+        "type": "distractor",
+        "text": "I wanted to do nothing in particular for a bit."
+      },
+      {
+        "type": "distractor",
+        "text": "This morning I felt like reorganizing my files, which was fine."
+      },
+      {
+        "type": "distractor",
+        "text": "I might try a new recipe this week, who knows."
+      },
+      {
+        "type": "fact",
+        "text": "I'm currently writing my master's thesis."
+      },
+      {
+        "type": "fact",
+        "text": "It's about AI companion chatbots that have long-term conversational memory."
+      },
+      {
+        "type": "fact",
+        "text": "It also studies how the chatbot's personality can evolve and adapt to the user over time."
+      },
+      {
+        "type": "distractor",
+        "text": "This morning I felt like the day went by fast, which was fine."
+      },
+      {
+        "type": "distractor",
+        "text": "Today I wished the day were a bit longer."
+      },
+      {
+        "type": "distractor",
+        "text": "I think I left a few messages unanswered, honestly."
+      },
+      {
+        "type": "distractor",
+        "text": "I think I had trouble picking a movie for a bit."
+      },
+      {
+        "type": "fact",
+        "text": "There's a band I've been listening to a lot."
+      },
+      {
+        "type": "fact",
+        "text": "They're called Phoenix, a French indie pop band."
+      },
+      {
+        "type": "fact",
+        "text": "They're originally from Versailles."
+      },
+      {
+        "type": "distractor",
+        "text": "I felt a bit tired, honestly."
+      },
+      {
+        "type": "distractor",
+        "text": "I think I felt a bit tired."
+      },
+      {
+        "type": "distractor",
+        "text": "I should probably go to bed earlier tonight."
+      },
+      {
+        "type": "distractor",
+        "text": "I think I tidied up my desk a little."
+      },
+      {
+        "type": "distractor",
+        "text": "I had trouble picking a movie, as usual."
+      },
+      {
+        "type": "distractor",
+        "text": "This morning I had trouble picking a movie, nothing special."
+      },
+      {
+        "type": "distractor",
+        "text": "This morning I had a slightly bitter cup of tea, you know how it is."
+      },
+      {
+        "type": "distractor",
+        "text": "This morning I kept hearing a noise outside, you know how it is."
+      },
+      {
+        "type": "distractor",
+        "text": "I enjoy a good cup of tea in the afternoon."
+      },
+      {
+        "type": "distractor",
+        "text": "Honestly I scrolled on my phone for a while, you know how it is."
+      },
+      {
+        "type": "distractor",
+        "text": "Today I watched a random video online for a bit."
+      },
+      {
+        "type": "distractor",
+        "text": "I think I had a slightly bitter cup of tea today."
+      },
+      {
+        "type": "distractor",
+        "text": "It's nice to just chat about nothing sometimes."
+      },
+      {
+        "type": "distractor",
+        "text": "I like when a room has warm lighting."
+      },
+      {
+        "type": "distractor",
+        "text": "Honestly I watched a random video online, nothing special."
+      },
+      {
+        "type": "distractor",
+        "text": "I found the weather a bit grey, which was fine."
+      },
+      {
+        "type": "distractor",
+        "text": "I think I saw a funny meme, nothing special."
+      },
+      {
+        "type": "distractor",
+        "text": "I listened to some background music today."
+      },
+      {
+        "type": "distractor",
+        "text": "This morning I rearranged a few things in my room, honestly."
+      },
+      {
+        "type": "distractor",
+        "text": "I think I couldn't decide what to eat today."
+      },
+      {
+        "type": "distractor",
+        "text": "Today I tidied up my desk a little, as usual."
+      },
+      {
+        "type": "distractor",
+        "text": "Honestly I thought the office was quiet, which was fine."
+      },
+      {
+        "type": "distractor",
+        "text": "Honestly I rearranged a few things in my room, you know how it is."
+      },
+      {
+        "type": "distractor",
+        "text": "Honestly I felt like the day went by fast, you know how it is."
+      },
+      {
+        "type": "distractor",
+        "text": "I think I kept yawning for no reason, honestly."
+      },
+      {
+        "type": "distractor",
+        "text": "I wished the day were a bit longer, honestly."
+      },
+      {
+        "type": "distractor",
+        "text": "I wished the day were a bit longer, you know how it is."
+      },
+      {
+        "type": "distractor",
+        "text": "I saw a really clean-looking website design today."
+      },
+      {
+        "type": "distractor",
+        "text": "I think I tidied up my desk a little today."
+      },
+      {
+        "type": "distractor",
+        "text": "Today I felt like reorganizing my files."
+      },
+      {
+        "type": "distractor",
+        "text": "I think I noticed my plant needs dusting, honestly."
+      },
+      {
+        "type": "distractor",
+        "text": "Today I felt a bit tired, honestly."
+      },
+      {
+        "type": "distractor",
+        "text": "This morning I noticed my plant needs dusting, nothing special."
+      },
+      {
+        "type": "distractor",
+        "text": "Honestly I drank too much coffee, honestly."
+      },
+      {
+        "type": "distractor",
+        "text": "Lately I drank too much coffee today."
+      },
+      {
+        "type": "distractor",
+        "text": "I watched a random video online for a bit."
+      },
+      {
+        "type": "distractor",
+        "text": "I think I couldn't decide what to eat for a bit."
+      },
+      {
+        "type": "distractor",
+        "text": "I keep meaning to clean my keyboard."
+      },
+      {
+        "type": "distractor",
+        "text": "Honestly I couldn't decide what to eat, as usual."
+      },
+      {
+        "type": "distractor",
+        "text": "Honestly I felt like the day went by fast, nothing special."
+      },
+      {
+        "type": "distractor",
+        "text": "Today I felt like reorganizing my files, you know how it is."
+      },
+      {
+        "type": "distractor",
+        "text": "I think I scrolled on my phone for a while, which was fine."
+      },
+      {
+        "type": "distractor",
+        "text": "I think I scrolled on my phone for a while, you know how it is."
+      },
+      {
+        "type": "distractor",
+        "text": "Today I thought the office was quiet, you know how it is."
+      },
+      {
+        "type": "distractor",
+        "text": "Lately I felt like the day went by fast today."
+      },
+      {
+        "type": "distractor",
+        "text": "Today I wished the day were a bit longer, nothing special."
+      },
+      {
+        "type": "distractor",
+        "text": "There's a bird that visits my window sometimes."
+      },
+      {
+        "type": "distractor",
+        "text": "This morning I couldn't decide what to eat today."
+      },
+      {
+        "type": "distractor",
+        "text": "Honestly I couldn't decide what to eat, which was fine."
+      },
+      {
+        "type": "distractor",
+        "text": "Today I couldn't focus on reading, honestly."
+      },
+      {
+        "type": "distractor",
+        "text": "This morning I took a short walk outside, nothing special."
+      },
+      {
+        "type": "distractor",
+        "text": "This morning I felt like reorganizing my files for a bit."
+      },
+      {
+        "type": "distractor",
+        "text": "Today I wished the day were a bit longer, you know how it is."
+      },
+      {
+        "type": "distractor",
+        "text": "Honestly I kept hearing a noise outside, which was fine."
+      },
+      {
+        "type": "distractor",
+        "text": "I think I took a short walk outside, you know how it is."
+      },
+      {
+        "type": "distractor",
+        "text": "This morning I watched a random video online, which was fine."
+      },
+      {
+        "type": "distractor",
+        "text": "This morning I kept yawning for no reason today."
+      },
+      {
+        "type": "distractor",
+        "text": "Today I noticed my plant needs dusting, you know how it is."
+      },
+      {
+        "type": "distractor",
+        "text": "Today I had a slightly bitter cup of tea, as usual."
+      },
+      {
+        "type": "distractor",
+        "text": "I think I felt like the day went by fast, you know how it is."
+      },
+      {
+        "type": "distractor",
+        "text": "The weather has been unpredictable lately."
+      },
+      {
+        "type": "distractor",
+        "text": "Honestly I rearranged a few things in my room, as usual."
+      },
+      {
+        "type": "distractor",
+        "text": "I took a short walk outside, honestly."
+      },
+      {
+        "type": "distractor",
+        "text": "Lately I forgot where I put my keys for a bit."
+      },
+      {
+        "type": "distractor",
+        "text": "Sometimes silence is underrated."
+      },
+      {
+        "type": "distractor",
+        "text": "Lately I felt like the day went by fast, as usual."
+      },
+      {
+        "type": "distractor",
+        "text": "Honestly I felt like reorganizing my files, honestly."
+      }
+    ],
+    "recall_questions": [
+      {
+        "id": "birthday",
+        "fact_type": "user_self",
+        "question": "Do you remember when my birthday is?",
+        "expected_facts": [
+          [
+            "april"
+          ],
+          [
+            "25",
+            "25th",
+            "twenty-fifth",
+            "twenty fifth"
+          ]
+        ]
+      },
+      {
+        "id": "food",
+        "fact_type": "user_self",
+        "question": "What food do I dislike, and what do I love?",
+        "expected_facts": [
+          [
+            "dislike",
+            "hate",
+            "don't like",
+            "do not like",
+            "not a fan"
+          ],
+          [
+            "mushroom",
+            "mushrooms"
+          ],
+          [
+            "love",
+            "like",
+            "enjoy"
+          ],
+          [
+            "ramen"
+          ]
+        ]
+      },
+      {
+        "id": "gym",
+        "fact_type": "user_self",
+        "question": "What days and time do I go to the gym?",
+        "expected_facts": [
+          [
+            "monday"
+          ],
+          [
+            "wednesday"
+          ],
+          [
+            "friday"
+          ],
+          [
+            "evening",
+            "evenings"
+          ]
+        ]
+      },
+      {
+        "id": "thesis",
+        "fact_type": "user_self",
+        "question": "What is my master's thesis about?",
+        "expected_facts": [
+          [
+            "ai companion",
+            "companion chatbot",
+            "chatbot"
+          ],
+          [
+            "long-term memory",
+            "long term memory",
+            "memory"
+          ],
+          [
+            "personality",
+            "evolve",
+            "adapt"
+          ]
+        ]
+      },
+      {
+        "id": "language",
+        "fact_type": "user_self",
+        "question": "Which language am I learning, and when do I study it?",
+        "expected_facts": [
+          [
+            "japanese"
+          ],
+          [
+            "morning",
+            "mornings"
+          ]
+        ]
+      },
+      {
+        "id": "job",
+        "fact_type": "user_self",
+        "question": "What do I do for work?",
+        "expected_facts": [
+          [
+            "backend",
+            "software",
+            "developer",
+            "programmer"
+          ],
+          [
+            "remote",
+            "remotely"
+          ]
+        ]
+      },
+      {
+        "id": "noemie",
+        "fact_type": "third_party",
+        "question": "What do you remember about my friend Noémie?",
+        "expected_facts": [
+          [
+            "noémie",
+            "noemie"
+          ],
+          [
+            "lyon"
+          ],
+          [
+            "artist",
+            "paint",
+            "watercolor",
+            "watercolour"
+          ]
+        ]
+      },
+      {
+        "id": "grandmother",
+        "fact_type": "third_party",
+        "question": "What do you remember about my grandmother Marie?",
+        "expected_facts": [
+          [
+            "marie"
+          ],
+          [
+            "brittany"
+          ],
+          [
+            "teacher",
+            "taught"
+          ],
+          [
+            "rose",
+            "garden"
+          ]
+        ]
+      },
+      {
+        "id": "anna",
+        "fact_type": "third_party",
+        "question": "What kind of place does my friend Anna dislike, and why?",
+        "expected_facts": [
+          [
+            "crowded",
+            "crowds",
+            "busy"
+          ],
+          [
+            "overwhelming",
+            "noise",
+            "noisy",
+            "too much"
+          ]
+        ]
+      },
+      {
+        "id": "marc",
+        "fact_type": "third_party",
+        "question": "What are my friend Marc's running habits?",
+        "expected_facts": [
+          [
+            "run",
+            "runs",
+            "running"
+          ],
+          [
+            "weekend",
+            "weekends"
+          ],
+          [
+            "river"
+          ],
+          [
+            "10",
+            "ten"
+          ]
+        ]
+      },
+      {
+        "id": "film",
+        "fact_type": "third_party",
+        "question": "Which film did I recommend, and what is it known for?",
+        "expected_facts": [
+          [
+            "grand budapest",
+            "budapest"
+          ],
+          [
+            "wes anderson",
+            "anderson"
+          ],
+          [
+            "pastel",
+            "symmetrical",
+            "color palette",
+            "composition"
+          ]
+        ]
+      },
+      {
+        "id": "music",
+        "fact_type": "third_party",
+        "question": "Which artist did I tell you about, and what is her sound like?",
+        "expected_facts": [
+          [
+            "lana del rey",
+            "lana"
+          ],
+          [
+            "nostalgic",
+            "cinematic",
+            "melancholic",
+            "dreamy"
+          ]
+        ]
+      },
+      {
+        "id": "brother",
+        "fact_type": "third_party",
+        "question": "What does my brother Thomas do, and where does he live?",
+        "expected_facts": [
+          [
+            "thomas"
+          ],
+          [
+            "architect"
+          ],
+          [
+            "berlin"
+          ]
+        ]
+      },
+      {
+        "id": "book",
+        "fact_type": "third_party",
+        "question": "What book did I mention, and what is it about?",
+        "expected_facts": [
+          [
+            "midnight library"
+          ],
+          [
+            "matt haig",
+            "haig"
+          ],
+          [
+            "different lives",
+            "parallel lives",
+            "could have lived",
+            "other lives",
+            "regret"
+          ]
+        ]
+      },
+      {
+        "id": "coworker",
+        "fact_type": "third_party",
+        "question": "What should I keep in mind about my coworker David's diet?",
+        "expected_facts": [
+          [
+            "david"
+          ],
+          [
+            "vegetarian"
+          ],
+          [
+            "peanut",
+            "peanuts"
+          ],
+          [
+            "allerg"
+          ]
+        ]
+      },
+      {
+        "id": "uncle",
+        "fact_type": "third_party",
+        "question": "What does my uncle Pierre do, and where?",
+        "expected_facts": [
+          [
+            "pierre"
+          ],
+          [
+            "vineyard",
+            "wine"
+          ],
+          [
+            "bordeaux"
+          ]
+        ]
+      },
+      {
+        "id": "neighbor",
+        "fact_type": "third_party",
+        "question": "Who is my neighbor Mrs. Chen, and what's notable about her family?",
+        "expected_facts": [
+          [
+            "chen"
+          ],
+          [
+            "piano"
+          ],
+          [
+            "twin",
+            "twins"
+          ],
+          [
+            "daughter",
+            "daughters"
+          ]
+        ]
+      },
+      {
+        "id": "restaurant",
+        "fact_type": "third_party",
+        "question": "What restaurant did I recommend, and what's their best dish?",
+        "expected_facts": [
+          [
+            "petit jardin",
+            "jardin"
+          ],
+          [
+            "onion soup",
+            "french onion"
+          ]
+        ]
+      },
+      {
+        "id": "sofia",
+        "fact_type": "third_party",
+        "question": "What is my friend Sofia studying, and what's her goal?",
+        "expected_facts": [
+          [
+            "sofia"
+          ],
+          [
+            "medicine",
+            "medical"
+          ],
+          [
+            "barcelona"
+          ],
+          [
+            "pediatric",
+            "pediatrician",
+            "children",
+            "kids"
+          ]
+        ]
+      },
+      {
+        "id": "dog",
+        "fact_type": "third_party",
+        "question": "Tell me about the dog Biscuit.",
+        "expected_facts": [
+          [
+            "biscuit"
+          ],
+          [
+            "golden retriever",
+            "retriever",
+            "golden"
+          ],
+          [
+            "swim",
+            "swimming",
+            "lake",
+            "water"
+          ]
+        ]
+      },
+      {
+        "id": "band",
+        "fact_type": "third_party",
+        "question": "What band did I mention, and where are they from?",
+        "expected_facts": [
+          [
+            "phoenix"
+          ],
+          [
+            "indie",
+            "pop"
+          ],
+          [
+            "versailles",
+            "french",
+            "france"
+          ]
+        ]
+      },
+      {
+        "id": "cousin",
+        "fact_type": "third_party",
+        "question": "What does my cousin Lucas do for a living?",
+        "expected_facts": [
+          [
+            "lucas"
+          ],
+          [
+            "photographer",
+            "photography"
+          ],
+          [
+            "travel",
+            "wildlife"
+          ]
+        ]
+      },
+      {
+        "id": "cafe",
+        "fact_type": "third_party",
+        "question": "What café did I mention, and what's special about it?",
+        "expected_facts": [
+          [
+            "brew & bean",
+            "brew and bean",
+            "brew"
+          ],
+          [
+            "espresso",
+            "coffee"
+          ],
+          [
+            "midnight",
+            "late"
+          ]
+        ]
+      },
+      {
+        "id": "teacher",
+        "fact_type": "third_party",
+        "question": "Who was Mr. Dubois, and what are his interests?",
+        "expected_facts": [
+          [
+            "dubois"
+          ],
+          [
+            "history"
+          ],
+          [
+            "chess"
+          ]
+        ]
+      },
+      {
+        "id": "game",
+        "fact_type": "third_party",
+        "question": "What video game did I mention, and what's it known for?",
+        "expected_facts": [
+          [
+            "hollow knight"
+          ],
+          [
+            "metroidvania",
+            "platformer"
+          ],
+          [
+            "hand-drawn",
+            "hand drawn",
+            "art"
+          ]
+        ]
+      },
+      {
+        "id": "sister",
+        "fact_type": "third_party",
+        "question": "What does my sister Camille do, and where does she live?",
+        "expected_facts": [
+          [
+            "camille"
+          ],
+          [
+            "montreal"
+          ],
+          [
+            "veterinarian",
+            "vet",
+            "animal"
+          ]
+        ]
+      },
+      {
+        "id": "colleague_trip",
+        "fact_type": "third_party",
+        "question": "Where did my colleague Yuki travel, and what did she do there?",
+        "expected_facts": [
+          [
+            "yuki"
+          ],
+          [
+            "patagonia"
+          ],
+          [
+            "hiking",
+            "trekking",
+            "trek",
+            "camping"
+          ]
+        ]
+      },
+      {
+        "id": "plant",
+        "fact_type": "third_party",
+        "question": "What kind of plant is Frank, and how do I care for it?",
+        "expected_facts": [
+          [
+            "fiddle-leaf",
+            "fiddle leaf",
+            "fig"
+          ],
+          [
+            "indirect light",
+            "bright"
+          ],
+          [
+            "once a week",
+            "weekly",
+            "water"
+          ]
+        ]
+      },
+      {
+        "id": "podcast",
+        "fact_type": "third_party",
+        "question": "What podcast did I mention, and who hosts it?",
+        "expected_facts": [
+          [
+            "deep time"
+          ],
+          [
+            "geology",
+            "earth",
+            "paleonto"
+          ],
+          [
+            "reed"
+          ]
+        ]
+      },
+      {
+        "id": "startup",
+        "fact_type": "third_party",
+        "question": "What is my friend Elena's company about, and where is it based?",
+        "expected_facts": [
+          [
+            "elena"
+          ],
+          [
+            "packaging",
+            "eco",
+            "sustainable",
+            "eco-friendly"
+          ],
+          [
+            "amsterdam"
+          ]
+        ]
+      }
+    ]
+  }
+]

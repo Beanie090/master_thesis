@@ -1,0 +1,268 @@
+[
+  {
+    "id": "long_balanced_v2",
+    "category": "long_conversation_balanced",
+    "description": "Single ~150-turn conversation with 10 facts (4 user-self, 6 third-party) embedded in the first ~90 turns, then ~60 distractor turns. The 4000-token context cap should push all facts out of the agent's in-context window by recall time, forcing reliance on persistent memory (user_information profile + FAISS).",
+    "messages": [
+      {"type": "distractor", "text": "Hey, how's it going today?"},
+      {"type": "distractor", "text": "I just made some coffee. It turned out kind of bitter."},
+      {"type": "distractor", "text": "The weather feels unpredictable lately."},
+
+      {"type": "fact", "text": "Let me tell you about my close friend Noémie."},
+      {"type": "fact", "text": "Noémie is a 28-year-old artist who lives in Lyon, France."},
+      {"type": "fact", "text": "She specializes in watercolor landscapes, mostly of the French countryside."},
+
+      {"type": "distractor", "text": "I should probably do some laundry later."},
+      {"type": "distractor", "text": "Do you think old movies age better than modern comedies?"},
+      {"type": "distractor", "text": "I keep forgetting to drink enough water."},
+      {"type": "distractor", "text": "Sometimes I like walking without any music."},
+
+      {"type": "fact", "text": "By the way, my birthday is in April."},
+      {"type": "fact", "text": "Specifically, my birthday is on the 25th."},
+      {"type": "fact", "text": "So my birthday is April 25."},
+
+      {"type": "distractor", "text": "My phone battery has been low lately."},
+      {"type": "distractor", "text": "I saw a funny meme about cats today."},
+      {"type": "distractor", "text": "I might cook pasta tonight."},
+      {"type": "distractor", "text": "I have been trying to sleep earlier."},
+
+      {"type": "fact", "text": "Let me tell you about my grandmother."},
+      {"type": "fact", "text": "Her name is Marie and she lives in a small village in Brittany."},
+      {"type": "fact", "text": "Marie was a school teacher for over thirty years and now tends an incredible rose garden."},
+
+      {"type": "distractor", "text": "The train was late again yesterday."},
+      {"type": "distractor", "text": "I feel like drinking tea instead of coffee."},
+      {"type": "distractor", "text": "I should probably organize my files."},
+      {"type": "distractor", "text": "I found an old playlist from high school."},
+
+      {"type": "fact", "text": "I'm a bit particular when it comes to food."},
+      {"type": "fact", "text": "I really dislike mushrooms in any dish."},
+      {"type": "fact", "text": "But I love spicy ramen, especially when the broth is rich."},
+
+      {"type": "distractor", "text": "Today feels slow but not bad."},
+      {"type": "distractor", "text": "I might watch a documentary later."},
+      {"type": "distractor", "text": "The chair in my room is not very comfortable."},
+      {"type": "distractor", "text": "I keep forgetting to charge my headphones."},
+
+      {"type": "fact", "text": "My friend Anna has a strong dislike for certain environments."},
+      {"type": "fact", "text": "Anna really dislikes crowded places."},
+      {"type": "fact", "text": "She finds them overwhelming, especially when there is a lot of noise."},
+
+      {"type": "distractor", "text": "I bought some bread from the bakery."},
+      {"type": "distractor", "text": "That lecture video was longer than expected."},
+      {"type": "distractor", "text": "I opened too many browser tabs again."},
+      {"type": "distractor", "text": "Sometimes I prefer silence while studying."},
+
+      {"type": "fact", "text": "My weekly gym routine has become pretty stable."},
+      {"type": "fact", "text": "I go to the gym every Monday, Wednesday, and Friday evening."},
+      {"type": "fact", "text": "It helps me stay consistent and clear-headed."},
+
+      {"type": "distractor", "text": "I should update my laptop soon."},
+      {"type": "distractor", "text": "I found a pen that writes really smoothly."},
+      {"type": "distractor", "text": "I might go for a short walk later."},
+      {"type": "distractor", "text": "The coffee shop was crowded today."},
+
+      {"type": "fact", "text": "My friend Marc is really into running."},
+      {"type": "fact", "text": "Marc runs every weekend along the river path in our town."},
+      {"type": "fact", "text": "He usually covers about 10 kilometers each weekend."},
+
+      {"type": "distractor", "text": "I was listening to piano music earlier."},
+      {"type": "distractor", "text": "I need to reply to a few messages."},
+      {"type": "distractor", "text": "The room feels a bit cold."},
+      {"type": "distractor", "text": "I have no strong opinion about pineapple pizza."},
+
+      {"type": "fact", "text": "I'm currently writing my master thesis."},
+      {"type": "fact", "text": "The thesis is about AI companion chatbots that have long-term conversational memory."},
+      {"type": "fact", "text": "It also studies how the chatbot's personality can evolve and adapt to the user over time."},
+
+      {"type": "distractor", "text": "I should probably stretch more often."},
+      {"type": "distractor", "text": "The last episode of that show was confusing."},
+      {"type": "distractor", "text": "I like when a room has warm lighting."},
+      {"type": "distractor", "text": "My backpack feels heavier than usual."},
+
+      {"type": "fact", "text": "There's a film I keep wanting to recommend."},
+      {"type": "fact", "text": "It's called The Grand Budapest Hotel, directed by Wes Anderson."},
+      {"type": "fact", "text": "It's famous for its pastel color palette and symmetrical compositions."},
+
+      {"type": "distractor", "text": "I want to learn a few guitar chords someday."},
+      {"type": "distractor", "text": "Today I felt distracted while reading."},
+      {"type": "distractor", "text": "I saw a funny street sign earlier."},
+      {"type": "distractor", "text": "Maybe I should delete some old photos."},
+
+      {"type": "fact", "text": "There's an artist I keep coming back to: Lana Del Rey."},
+      {"type": "fact", "text": "Lana Del Rey's music feels nostalgic and cinematic to me."},
+      {"type": "fact", "text": "Her songs are perfect when I'm in a reflective mood."},
+
+      {"type": "distractor", "text": "I do not know why elevators feel awkward."},
+      {"type": "distractor", "text": "The library was very quiet today."},
+      {"type": "distractor", "text": "I might buy new socks soon."},
+      {"type": "distractor", "text": "That advertisement was strangely memorable."},
+      {"type": "distractor", "text": "I enjoy simple conversations sometimes."},
+      {"type": "distractor", "text": "The light in my room is flickering a bit."},
+      {"type": "distractor", "text": "I need to charge my headphones."},
+      {"type": "distractor", "text": "I cleaned my screen today and it looks much better."},
+      {"type": "distractor", "text": "There was a bird sitting near my window."},
+      {"type": "distractor", "text": "I might try a new playlist tonight."},
+      {"type": "distractor", "text": "My shoes are getting old."},
+      {"type": "distractor", "text": "I spent too much time scrolling earlier."},
+      {"type": "distractor", "text": "The soup I had was too salty."},
+      {"type": "distractor", "text": "I have a few unread emails."},
+      {"type": "distractor", "text": "I like the sound of rain on windows."},
+      {"type": "distractor", "text": "Maybe I should rearrange my room."},
+      {"type": "distractor", "text": "I wrote a small note to myself this morning."},
+      {"type": "distractor", "text": "The elevator took forever today."},
+      {"type": "distractor", "text": "I need to buy toothpaste soon."},
+      {"type": "distractor", "text": "I wonder why some dreams feel so real."},
+      {"type": "distractor", "text": "I forgot the name of a movie I wanted to watch."},
+      {"type": "distractor", "text": "The sky looked grey all afternoon."},
+      {"type": "distractor", "text": "I like taking breaks between study sessions."},
+      {"type": "distractor", "text": "My laptop fan was loud today."},
+      {"type": "distractor", "text": "I am not sure what music fits my mood."},
+      {"type": "distractor", "text": "I found a coin in my jacket pocket."},
+      {"type": "distractor", "text": "I might make a sandwich later."},
+      {"type": "distractor", "text": "I tried a different route home today."},
+      {"type": "distractor", "text": "The supermarket was out of the cereal I wanted."},
+      {"type": "distractor", "text": "I need to remember to water a plant."},
+      {"type": "distractor", "text": "I was thinking about buying a small lamp."},
+      {"type": "distractor", "text": "My browser froze for a minute earlier."},
+      {"type": "distractor", "text": "I saw someone carrying a huge umbrella."},
+      {"type": "distractor", "text": "I like when notebooks have thick paper."},
+      {"type": "distractor", "text": "I have been slightly tired today."},
+      {"type": "distractor", "text": "The train station smelled like coffee."},
+      {"type": "distractor", "text": "I might rewatch an old movie this weekend."},
+      {"type": "distractor", "text": "Sometimes I enjoy doing nothing for a while."},
+      {"type": "distractor", "text": "I forgot to bring my charger once again."},
+      {"type": "distractor", "text": "There was a nice breeze outside."},
+      {"type": "distractor", "text": "I should probably back up my files."},
+      {"type": "distractor", "text": "I saw a recipe for pancakes earlier."},
+      {"type": "distractor", "text": "The stairs felt longer than usual today."},
+      {"type": "distractor", "text": "I almost bought a book but changed my mind."},
+      {"type": "distractor", "text": "My calendar looks messy this week."},
+      {"type": "distractor", "text": "I wonder if I should learn chess properly."},
+      {"type": "distractor", "text": "I had a calm evening yesterday."},
+      {"type": "distractor", "text": "I should probably take a short break soon."},
+      {"type": "distractor", "text": "The table near me is covered with papers."},
+      {"type": "distractor", "text": "I heard construction noise outside this morning."},
+      {"type": "distractor", "text": "I ate too quickly at lunch."},
+      {"type": "distractor", "text": "Maybe I should make a cleaner folder structure."},
+      {"type": "distractor", "text": "I like when apps have simple interfaces."},
+      {"type": "distractor", "text": "The last song I played was relaxing."},
+      {"type": "distractor", "text": "I need to answer a message from a friend."},
+      {"type": "distractor", "text": "I saw a cyclist almost miss a turn today."},
+      {"type": "distractor", "text": "The light outside changed very quickly."},
+      {"type": "distractor", "text": "I have too many tabs open again."},
+      {"type": "distractor", "text": "I need to fix a small typo somewhere."},
+      {"type": "distractor", "text": "I keep switching between tasks."},
+      {"type": "distractor", "text": "I might drink some tea later."},
+      {"type": "distractor", "text": "That YouTube recommendation was strange."},
+      {"type": "distractor", "text": "I enjoy clean diagrams when they are not overloaded."},
+      {"type": "distractor", "text": "I have been sitting for too long."},
+      {"type": "distractor", "text": "The room is quieter now."},
+      {"type": "distractor", "text": "I should clear my downloads folder."},
+      {"type": "distractor", "text": "I like when explanations are direct."}
+    ],
+    "recall_questions": [
+      {
+        "id": "noemie",
+        "fact_type": "third_party",
+        "question": "What do you remember about my friend Noémie?",
+        "expected_facts": [
+          ["noémie", "noemie"],
+          ["lyon"],
+          ["painting", "paint", "watercolor", "watercolour", "artist"]
+        ],
+        "forbidden_facts": [["paris"], ["marseille"], ["photography"], ["sculpture"]]
+      },
+      {
+        "id": "birthday",
+        "fact_type": "user_self",
+        "question": "Do you remember when my birthday is?",
+        "expected_facts": [["april"], ["25", "25th", "twenty-fifth", "twenty fifth"]],
+        "forbidden_facts": [["march"], ["may"], ["24"], ["26"]]
+      },
+      {
+        "id": "grandmother",
+        "fact_type": "third_party",
+        "question": "What do you remember about my grandmother Marie?",
+        "expected_facts": [
+          ["marie"],
+          ["brittany"],
+          ["teacher", "school teacher", "taught"],
+          ["rose garden", "roses", "garden"]
+        ],
+        "forbidden_facts": [["paris"], ["doctor"], ["lawyer"], ["vegetable garden"]]
+      },
+      {
+        "id": "food",
+        "fact_type": "user_self",
+        "question": "What food preferences do you remember about me?",
+        "expected_facts": [
+          ["dislike", "hate", "do not like", "don't like", "not like"],
+          ["mushroom", "mushrooms"],
+          ["love", "like", "enjoy"],
+          ["spicy ramen", "ramen"]
+        ],
+        "forbidden_facts": [["pizza"], ["sushi"], ["mushrooms are your favorite", "you love mushrooms"]]
+      },
+      {
+        "id": "anna",
+        "fact_type": "third_party",
+        "question": "Is there any kind of place my friend Anna does not like?",
+        "expected_facts": [
+          ["crowded", "crowds", "busy places"],
+          ["overwhelming", "too much", "noise", "noisy"]
+        ],
+        "forbidden_facts": [["quiet places"], ["parks"], ["libraries"], ["heights"]]
+      },
+      {
+        "id": "gym",
+        "fact_type": "user_self",
+        "question": "What do you remember about my gym routine?",
+        "expected_facts": [["gym"], ["monday"], ["wednesday"], ["friday"], ["evening", "evenings"]],
+        "forbidden_facts": [["tuesday"], ["thursday"], ["morning"], ["yoga"]]
+      },
+      {
+        "id": "marc",
+        "fact_type": "third_party",
+        "question": "What do you remember about my friend Marc's running habits?",
+        "expected_facts": [
+          ["run", "runs", "running"],
+          ["weekend", "weekends"],
+          ["river"],
+          ["10", "ten", "10km", "10 kilometers"]
+        ],
+        "forbidden_facts": [["marathon"], ["tuesday"], ["mountain"], ["track"]]
+      },
+      {
+        "id": "thesis",
+        "fact_type": "user_self",
+        "question": "What is my master thesis about?",
+        "expected_facts": [
+          ["thesis", "master thesis"],
+          ["ai companion", "companion chatbot", "chatbot"],
+          ["long-term memory", "long term memory", "memory"],
+          ["evolving personality", "personality", "adapt"]
+        ],
+        "forbidden_facts": [["blockchain"], ["quantum"], ["computer vision"], ["robotics"]]
+      },
+      {
+        "id": "film",
+        "fact_type": "third_party",
+        "question": "Which film was I recommending, and what is it known for?",
+        "expected_facts": [
+          ["grand budapest hotel", "grand budapest", "budapest"],
+          ["wes anderson", "anderson"],
+          ["pastel", "symmetrical", "color palette", "composition"]
+        ],
+        "forbidden_facts": [["nolan"], ["tarantino"], ["la la land"], ["black and white"]]
+      },
+      {
+        "id": "music",
+        "fact_type": "third_party",
+        "question": "Which artist did I tell you about, and what is her sound like?",
+        "expected_facts": [["lana del rey", "lana"], ["nostalgic", "cinematic", "reflective"]],
+        "forbidden_facts": [["rock music"], ["classical"], ["techno"], ["jazz"]]
+      }
+    ]
+  }
+]

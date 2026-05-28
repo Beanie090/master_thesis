@@ -1,0 +1,48 @@
+# Secrets
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+venv/
+.venv/
+env/
+
+# Databases
+*.db
+*.sqlite
+*.sqlite3
+
+# Large binaries (excluded by user request)
+*.jpg
+*.jpeg
+*.png
+*.gif
+*.pdf
+
+# Local history / past versions
+past versions/
+
+# IDE / tooling
+.idea/
+.vscode/
+
+# Files kept on disk but excluded from repo
+/LD-Agent-main/
+/agent/
+/static/
+/templates/
+/LEAi.py
+/app.py
+/conversations.json
+/gemini_test.py
+/script.txt
+
+# OS
+Thumbs.db
+.DS_Store

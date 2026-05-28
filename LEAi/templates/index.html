@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>LEAi - Your AI Companion</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="/static/script.js"></script>
+</head>
+<body class="bg-gray-900 text-white">
+
+    <!-- Main Menu Modal -->
+    <div id="mainMenuModal" class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-75 z-50">
+        <div class="bg-white text-black p-6 rounded-xl space-y-4 text-center max-w-md w-full">
+            <h2 class="text-xl font-bold">Welcome to LEAi</h2>
+            <div class="flex flex-col gap-4 mt-4">
+                <button id="newConversationBtn" class="bg-pink-500 hover:bg-pink-600 text-white py-2 px-4 rounded-lg">💬 New Conversation</button>
+                <button id="continueConversationBtn" class="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded-lg">🔑 Continue Conversation</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Personality Selection Modal (hidden by default) -->
+    <div id="personalityModal" class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-75 z-50 hidden">
+        <div class="bg-white text-black p-6 rounded-xl space-y-4 text-center max-w-md w-full">
+            <h2 class="text-xl font-bold">Choose LEAi's Personality</h2>
+            <p class="text-sm">Would you like to talk to the default LEAi or create your own custom version?</p>
+            <div class="flex flex-col gap-4 mt-4">
+                <button id="defaultBtn" class="bg-pink-500 hover:bg-pink-600 text-white py-2 px-4 rounded-lg">💖 LEAi's Default Personality</button>
+                <button id="customBtn" class="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded-lg">🎨 Create Custom Personality</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Chat UI -->
+    <div id="chatContainer" class="max-w-3xl mx-auto py-6 px-4 hidden">
+        <div class="flex justify-between items-center">
+            <h1 class="text-3xl font-bold">💖LEAi🪐</h1>
+            <div class="relative">
+                <button id="optionsBtn" class="bg-pink-600 px-3 py-1 rounded-lg">Options</button>
+                <div id="dropdown" class="absolute right-0 mt-2 w-48 bg-white text-black rounded-lg shadow-lg hidden">
+                    <button class="block w-full text-left px-4 py-2 hover:bg-gray-200" onclick="copySessionId()">Copy Session ID</button>
+                    <!-- Removed "Set Session ID" option -->
+                </div>
+            </div>
+        </div>
+
+        <!-- Taller chat box: fills almost to the bottom -->
+        <div id="chatBox" class="mt-6 bg-gray-800 p-4 rounded-xl h-[calc(100vh-220px)] overflow-y-auto space-y-4"></div>
+
+        <form id="chatForm" class="mt-4 flex space-x-2">
+            <input type="text" id="messageInput" class="flex-1 p-2 rounded-lg text-black" placeholder="Talk to LEAi..." required />
+            <button class="bg-pink-500 px-4 py-2 rounded-lg">Send</button>
+        </form>
+
+        <p class="text-sm text-gray-400 mt-4">Session ID: <span id="sessionId"></span></p>
+    </div>
+</body>
+</html>

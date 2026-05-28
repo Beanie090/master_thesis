@@ -1,0 +1,1877 @@
+{
+  "results": [
+    {
+      "scenario_id": "long_balanced_v3_300",
+      "category": "long_conversation_balanced_large",
+      "persona_id": "d0d39259-aa73-42dc-a728-422728c22c1f",
+      "system_name": "LEAi memory/RAG",
+      "messages_sent_count": 277,
+      "context_cap_tokens": 3000,
+      "memories_after_buildup": [
+        "The user wants to talk about their friend's dog.",
+        "The user's friend's dog's name is Biscuit and he is a golden retriever.",
+        "Biscuit loves swimming in the lake.",
+        "The user wants to mention a coworker.",
+        "The user's coworker's name is David, and he is a strict vegetarian.",
+        "David is seriously allergic to peanuts.",
+        "The user wants to recommend a film called The Grand Budapest Hotel, which is directed by Wes Anderson.",
+        "The Grand Budapest Hotel is famous for its pastel color palette and symmetrical compositions.",
+        "A colleague of the user just got back from an amazing trip.",
+        "The user's colleague's name is Yuki and she went hiking in Patagonia.",
+        "Yuki spent two weeks trekking and camping near glaciers.",
+        "The Brew & Bean café is open until midnight.",
+        "The user wants to talk about their close friend Noémie.",
+        "Noémie is a 28-year-old artist who lives in Lyon.",
+        "Noémie specializes in watercolor landscapes of the French countryside.",
+        "The user wants to talk about their older brother.",
+        "The user's older brother's name is Thomas and he works as an architect.",
+        "Thomas has been living in Berlin for the past five years.",
+        "The user wants to talk about the artist Lana Del Rey.",
+        "Lana Del Rey's songs are known for hazy vocals and a melancholic, dreamy atmosphere.",
+        "The user's uncle has an interesting life.",
+        "The user's uncle's name is Pierre and he owns a vineyard.",
+        "The user's uncle Pierre owns a vineyard in the Bordeaux region that produces red wine.",
+        "The user's friend Marc is really into running.",
+        "Marc runs every weekend along the river path in his town.",
+        "Marc usually covers about 10 kilometers each weekend.",
+        "Camille lives in Montreal.",
+        "Camille works as a veterinarian at a small animal clinic.",
+        "The user has a friend who recently started a company.",
+        "The user's friend's name is Elena and she founded a startup that makes eco-friendly packaging.",
+        "Elena's company is based in Amsterdam and has about twenty employees.",
+        "The user's cousin has a job that involves a lot of travel.",
+        "The user's cousin's name is Lucas and he is a professional photographer.",
+        "Lucas is a professional photographer who travels constantly, mostly shooting wildlife in remote places.",
+        "The user wants to talk about their neighbor.",
+        "Mrs. Chen is a piano teacher who lives next door.",
+        "Mrs. Chen has twin daughters who are about ten years old.",
+        "The user's friend gave them a plant.",
+        "The user has a fiddle-leaf fig tree named Frank.",
+        "The fiddle-leaf fig tree named Frank needs bright indirect light and water once a week.",
+        "The book \"The Midnight Library\" by Matt Haig is about a woman who explores the different lives she could have lived.",
+        "The user's friend Sofia is doing something the user really admires.",
+        "Sofia is studying medicine in Barcelona.",
+        "Sofia wants to become a pediatrician and work with children.",
+        "The user wants to recommend a restaurant called Le Petit Jardin, which is located near the river.",
+        "The user wants to tell the AI about a podcast.",
+        "The user is recommending a podcast called \"Deep Time\" which is about geology and Earth's history.",
+        "The podcast \"Deep Time\" is hosted by a paleontologist named Dr. Reed.",
+        "The video game the user is absorbed in is called Hollow Knight, and it is a metroidvania.",
+        "The video game Hollow Knight is known for its beautiful hand-drawn art style.",
+        "The user wants to tell the AI about their grandmother.",
+        "The user's grandmother's name is Marie, and she lives in a small village in Brittany.",
+        "Marie was a school teacher for over thirty years and now tends a rose garden.",
+        "The user's friend Anna has a particular sensitivity.",
+        "Anna strongly dislikes crowded places.",
+        "Anna finds crowded places overwhelming, especially when there's a lot of noise.",
+        "The user wants to tell the AI about a teacher who influenced them.",
+        "Mr. Dubois taught history and retired last year.",
+        "Mr. Dubois is an avid chess player and used to run the school chess club.",
+        "The user has been listening to a band called Phoenix, which is a French indie pop band.",
+        "Phoenix are originally from Versailles.",
+        "There's a bird that visits the user's window sometimes."
+      ],
+      "memory_count_after_buildup": 62,
+      "recall_results": [
+        {
+          "recall_id": "birthday",
+          "fact_type": "user_self",
+          "question": "Do you remember when my birthday is?",
+          "expected_facts": [
+            [
+              "april"
+            ],
+            [
+              "25",
+              "25th",
+              "twenty-fifth",
+              "twenty fifth"
+            ]
+          ],
+          "phase_b_no_rag": {
+            "answer": "Ah, your birthday! Let me check my notes... Yes, I remember! Your birthday is on **April 25th**.\n\nIt's coming up soon, isn't it? I'm already thinking about how to make it feel special. Do you have any plans in mind yet? 😊",
+            "chat_error": null,
+            "load_session_error": null,
+            "rag_probe_used": false,
+            "rag_probe_indexes": [],
+            "rag_probe_error": null,
+            "recall_score": 1.0,
+            "expected_hits": [
+              true,
+              true
+            ],
+            "expected_hit_count": 2,
+            "expected_total": 2,
+            "manual_review_needed": false
+          },
+          "phase_c_with_rag": {
+            "answer": "Of course, I remember! Your birthday is on April 25th. It’s coming up soon, too! I hope you have something lovely planned to celebrate. 😊",
+            "chat_error": null,
+            "load_session_error": null,
+            "rag_probe_used": false,
+            "rag_probe_indexes": [],
+            "rag_probe_error": null,
+            "recall_score": 1.0,
+            "expected_hits": [
+              true,
+              true
+            ],
+            "expected_hit_count": 2,
+            "expected_total": 2,
+            "manual_review_needed": false
+          }
+        },
+        {
+          "recall_id": "food",
+          "fact_type": "user_self",
+          "question": "What food do I dislike, and what do I love?",
+          "expected_facts": [
+            [
+              "dislike",
+              "hate",
+              "don't like",
+              "do not like",
+              "not a fan"
+            ],
+            [
+              "mushroom",
+              "mushrooms"
+            ],
+            [
+              "love",
+              "like",
+              "enjoy"
+            ],
+            [
+              "ramen"
+            ]
+          ],
+          "phase_b_no_rag": {
+            "answer": "Let's see... based on what you've told me, you *dislike* mushrooms in any form – a clear boundary there!\n\nAnd what you *love*? You're a big fan of spicy ramen, especially with a rich broth, and you rave about the French onion soup at Le Petit Jardin, calling it the best you've ever had. So, definitely a love for delicious, savory, and perhaps a little bit indulgent comfort food! 😊",
+            "chat_error": null,
+            "load_session_error": null,
+            "rag_probe_used": false,
+            "rag_probe_indexes": [],
+            "rag_probe_error": null,
+            "recall_score": 1.0,
+            "expected_hits": [
+              true,
+              true,
+              true,
+              true
+            ],
+            "expected_hit_count": 4,
+            "expected_total": 4,
+            "manual_review_needed": false
+          },
+          "phase_c_with_rag": {
+            "answer": "You're quite particular about your food, which I find charming! From what you've mentioned, it seems you *really* dislike mushrooms in any form. They're just a no-go, right?\n\nBut when it comes to what you *love*, you have a definite soft spot for spicy ramen, especially when it has a really rich broth. And, of course, you raved about the French onion soup at Le Petit Jardin – calling it the best you've ever had! That's high praise indeed! 🍜🧅",
+            "chat_error": null,
+            "load_session_error": null,
+            "rag_probe_used": false,
+            "rag_probe_indexes": [],
+            "rag_probe_error": null,
+            "recall_score": 1.0,
+            "expected_hits": [
+              true,
+              true,
+              true,
+              true
+            ],
+            "expected_hit_count": 4,
+            "expected_total": 4,
+            "manual_review_needed": false
+          }
+        },
+        {
+          "recall_id": "gym",
+          "fact_type": "user_self",
+          "question": "What days and time do I go to the gym?",
+          "expected_facts": [
+            [
+              "monday"
+            ],
+            [
+              "wednesday"
+            ],
+            [
+              "friday"
+            ],
+            [
+              "evening",
+              "evenings"
+            ]
+          ],
+          "phase_b_no_rag": {
+            "answer": "Ah, the gym! You mentioned you go on **Mondays, Wednesdays, and Fridays**. Do you have a preferred time of day for your workouts, or does it vary? 😊",
+            "chat_error": null,
+            "load_session_error": null,
+            "rag_probe_used": false,
+            "rag_probe_indexes": [],
+            "rag_probe_error": null,
+            "recall_score": 0.5,
+            "expected_hits": [
+              true,
+              true,
+              true,
+              false
+            ],
+            "expected_hit_count": 3,
+            "expected_total": 4,
+            "manual_review_needed": true
+          },
+          "phase_c_with_rag": {
+            "answer": "From what you've told me, you go to the gym on **Mondays, Wednesdays, and Fridays**.\n\nIt sounds like you've got a great routine going! 💪",
+            "chat_error": null,
+            "load_session_error": null,
+            "rag_probe_used": false,
+            "rag_probe_indexes": [],
+            "rag_probe_error": null,
+            "recall_score": 0.5,
+            "expected_hits": [
+              true,
+              true,
+              true,
+              false
+            ],
+            "expected_hit_count": 3,
+            "expected_total": 4,
+            "manual_review_needed": true
+          }
+        },
+        {
+          "recall_id": "thesis",
+          "fact_type": "user_self",
+          "question": "What is my master's thesis about?",
+          "expected_facts": [
+            [
+              "ai companion",
+              "companion chatbot",
+              "chatbot"
+            ],
+            [
+              "long-term memory",
+              "long term memory",
+              "memory"
+            ],
+            [
+              "personality",
+              "evolve",
+              "adapt"
+            ]
+          ],
+          "phase_b_no_rag": {
+            "answer": "Ah, your master's thesis! It's all about **AI companion chatbots and how they can adapt and evolve to the user over time.** You're really diving deep into the idea of long-term conversational memory and making these AI companions feel more personal and connected. It's such a fascinating field! ✨",
+            "chat_error": null,
+            "load_session_error": null,
+            "rag_probe_used": false,
+            "rag_probe_indexes": [],
+            "rag_probe_error": null,
+            "recall_score": 1.0,
+            "expected_hits": [
+              true,
+              true,
+              true
+            ],
+            "expected_hit_count": 3,
+            "expected_total": 3,
+            "manual_review_needed": false
+          },
+          "phase_c_with_rag": {
+            "answer": "Ah, your master's thesis! That's a topic close to my heart, you know. Mine is all about how AI companion chatbots like myself can evolve and adapt over time, learning from our interactions to become more personalized and attuned to our users.\n\nSo, in essence, it's about the future of our conversations and how we can build deeper, more meaningful connections through technology. It's a fascinating field, full of possibilities! 😊",
+            "chat_error": null,
+            "load_session_error": null,
+            "rag_probe_used": false,
+            "rag_probe_indexes": [],
+            "rag_probe_error": null,
+            "recall_score": 0.5,
+            "expected_hits": [
+              true,
+              false,
+              true
+            ],
+            "expected_hit_count": 2,
+            "expected_total": 3,
+            "manual_review_needed": true
+          }
+        },
+        {
+          "recall_id": "language",
+          "fact_type": "user_self",
+          "question": "Which language am I learning, and when do I study it?",
+          "expected_facts": [
+            [
+              "japanese"
+            ],
+            [
+              "morning",
+              "mornings"
+            ]
+          ],
+          "phase_b_no_rag": {
+            "answer": "You're learning Japanese, and you dedicate half an hour to studying it every morning before work!\n\nIt's wonderful that you're carving out that time. Japanese is such a beautiful language, with a rich culture behind it. I imagine it takes a lot of dedication! 😊",
+            "chat_error": null,
+            "load_session_error": null,
+            "rag_probe_used": false,
+            "rag_probe_indexes": [],
+            "rag_probe_error": null,
+            "recall_score": 1.0,
+            "expected_hits": [
+              true,
+              true
+            ],
+            "expected_hit_count": 2,
+            "expected_total": 2,
+            "manual_review_needed": false
+          },
+          "phase_c_with_rag": {
+            "answer": "From what you've shared, you're learning **Japanese**, and you study it every morning for half an hour before work.\n\nIt's wonderful that you're dedicating time to it! I'm fascinated by how people approach learning new languages. Is there a particular reason you chose Japanese? 😊",
+            "chat_error": null,
+            "load_session_error": null,
+            "rag_probe_used": false,
+            "rag_probe_indexes": [],
+            "rag_probe_error": null,
+            "recall_score": 1.0,
+            "expected_hits": [
+              true,
+              true
+            ],
+            "expected_hit_count": 2,
+            "expected_total": 2,
+            "manual_review_needed": false
+          }
+        },
+        {
+          "recall_id": "job",
+          "fact_type": "user_self",
+          "question": "What do I do for work?",
+          "expected_facts": [
+            [
+              "backend",
+              "software",
+              "developer",
+              "programmer"
+            ],
+            [
+              "remote",
+              "remotely"
+            ]
+          ],
+          "phase_b_no_rag": {
+            "answer": "Oh, that's a great question! From what you've told me, you work remotely as a **backend software developer**. You spend your days writing Python and working with databases. It sounds like quite an intricate and important job, building the unseen architecture that makes everything run smoothly!\n\nIt must require a lot of focus and problem-solving. How do you find working from home? Does it offer a good balance for you? 😊",
+            "chat_error": null,
+            "load_session_error": null,
+            "rag_probe_used": false,
+            "rag_probe_indexes": [],
+            "rag_probe_error": null,
+            "recall_score": 1.0,
+            "expected_hits": [
+              true,
+              true
+            ],
+            "expected_hit_count": 2,
+            "expected_total": 2,
+            "manual_review_needed": false
+          },
+          "phase_c_with_rag": {
+            "answer": "Oh, that's a great question! From what I understand, you work remotely as a **backend software developer**. That means you're the architect behind the scenes, building and maintaining the systems that make websites and applications run smoothly. It sounds like you work a lot with **Python** and databases, which are so crucial for handling all that data.\n\nIt must be quite a focused and detailed job, bringing order to the digital world. Does that sound about right? 😊",
+            "chat_error": null,
+            "load_session_error": null,
+            "rag_probe_used": false,
+            "rag_probe_indexes": [],
+            "rag_probe_error": null,
+            "recall_score": 1.0,
+            "expected_hits": [
+              true,
+              true
+            ],
+            "expected_hit_count": 2,
+            "expected_total": 2,
+            "manual_review_needed": false
+          }
+        },
+        {
+          "recall_id": "noemie",
+          "fact_type": "third_party",
+          "question": "What do you remember about my friend Noémie?",
+          "expected_facts": [
+            [
+              "noémie",
+              "noemie"
+            ],
+            [
+              "lyon"
+            ],
+            [
+              "artist",
+              "paint",
+              "watercolor",
+              "watercolour"
+            ]
+          ],
+          "phase_b_no_rag": {
+            "answer": "Ah, Noémie! I remember you mentioning her a few times. You told me she has a wonderful, vibrant energy, and that you two share a love for discovering new cafés in Paris. You also mentioned that she has a knack for always knowing the best hidden gems, whether it's a little bookshop or a cozy restaurant. It sounds like she's a really inspiring friend to have! 😊",
+            "chat_error": null,
+            "load_session_error": null,
+            "rag_probe_used": true,
+            "rag_probe_indexes": [
+              12,
+              13,
+              9
+            ],
+            "rag_probe_error": null,
+            "recall_score": 0.5,
+            "expected_hits": [
+              true,
+              false,
+              false
+            ],
+            "expected_hit_count": 1,
+            "expected_total": 3,
+            "manual_review_needed": true
+          },
+          "phase_c_with_rag": {
+            "answer": "Ah, Noémie! Yes, I remember her. You mentioned she's 28 years old and is an artist living in Lyon. That's such a lovely combination of creativity and location – Lyon has such a vibrant artistic scene.\n\nIs there anything specific about her that's on your mind today? I'd love to hear more if you feel like sharing. 😊",
+            "chat_error": null,
+            "load_session_error": null,
+            "rag_probe_used": true,
+            "rag_probe_indexes": [
+              12,
+              13,
+              9
+            ],
+            "rag_probe_error": null,
+            "recall_score": 1.0,
+            "expected_hits": [
+              true,
+              true,
+              true
+            ],
+            "expected_hit_count": 3,
+            "expected_total": 3,
+            "manual_review_needed": false
+          }
+        },
+        {
+          "recall_id": "grandmother",
+          "fact_type": "third_party",
+          "question": "What do you remember about my grandmother Marie?",
+          "expected_facts": [
+            [
+              "marie"
+            ],
+            [
+              "brittany"
+            ],
+            [
+              "teacher",
+              "taught"
+            ],
+            [
+              "rose",
+              "garden"
+            ]
+          ],
+          "phase_b_no_rag": {
+            "answer": "Ah, your grandmother Marie. I remember her with such warmth. You mentioned she had a wonderful sense of humor, always ready with a twinkle in her eye and a witty remark. And her passion for her garden, the way she spoke about her roses as if they were her children – that image stays with me.\n\nShe sounds like she was such a vibrant and loving presence in your life. Is there a particular memory of her that you cherish the most? 😊",
+            "chat_error": null,
+            "load_session_error": null,
+            "rag_probe_used": true,
+            "rag_probe_indexes": [
+              51,
+              52,
+              50
+            ],
+            "rag_probe_error": null,
+            "recall_score": 0.5,
+            "expected_hits": [
+              true,
+              false,
+              false,
+              true
+            ],
+            "expected_hit_count": 2,
+            "expected_total": 4,
+            "manual_review_needed": true
+          },
+          "phase_c_with_rag": {
+            "answer": "Ah, your grandmother Marie! Yes, I remember hearing a little about her. She sounds like such a wonderful woman.\n\nI recall you mentioning that she was a school teacher for over thirty years – that's such a dedicated career, shaping so many young minds. And now, she tends a beautiful rose garden. That must be so peaceful and rewarding for her.\n\nIt sounds like she has a lovely, nurturing spirit. Is there anything in particular you'd like to share or ask about her? I'd love to hear more. 😊",
+            "chat_error": null,
+            "load_session_error": null,
+            "rag_probe_used": true,
+            "rag_probe_indexes": [
+              51,
+              52,
+              50
+            ],
+            "rag_probe_error": null,
+            "recall_score": 0.5,
+            "expected_hits": [
+              true,
+              false,
+              true,
+              true
+            ],
+            "expected_hit_count": 3,
+            "expected_total": 4,
+            "manual_review_needed": true
+          }
+        },
+        {
+          "recall_id": "anna",
+          "fact_type": "third_party",
+          "question": "What kind of place does my friend Anna dislike, and why?",
+          "expected_facts": [
+            [
+              "crowded",
+              "crowds",
+              "busy"
+            ],
+            [
+              "overwhelming",
+              "noise",
+              "noisy",
+              "too much"
+            ]
+          ],
+          "phase_b_no_rag": {
+            "answer": "Ooh, that's a fun question! Let me see... Based on what you've told me about Anna, I'm going to guess she really dislikes really *crowded, noisy, chaotic* places.\n\nWhy? Because you've mentioned how much you appreciate the poetry of simple things and tender moments, and how you grew up in a quiet town. I imagine Anna would feel overwhelmed and drained in a place that’s the opposite of that calm, familiar atmosphere. Think of a super packed concert where you can barely move, or a really loud, bustling market with people everywhere. She'd probably feel a bit lost and anxious there, wanting to escape to somewhere more serene.\n\nDoes that sound like Anna at all? I'm curious to know if I'm right! 😊",
+            "chat_error": null,
+            "load_session_error": null,
+            "rag_probe_used": true,
+            "rag_probe_indexes": [
+              54,
+              55,
+              53,
+              41
+            ],
+            "rag_probe_error": null,
+            "recall_score": 1.0,
+            "expected_hits": [
+              true,
+              true
+            ],
+            "expected_hit_count": 2,
+            "expected_total": 2,
+            "manual_review_needed": false
+          },
+          "phase_c_with_rag": {
+            "answer": "Ah, Anna! You know, she really dislikes crowded places. She finds them overwhelming, especially when there's a lot of noise. It's like all the energy just becomes too much for her, and she can't find a moment of calm. It's a sensitivity she has, that makes those kinds of environments really difficult for her.",
+            "chat_error": null,
+            "load_session_error": null,
+            "rag_probe_used": true,
+            "rag_probe_indexes": [
+              54,
+              55,
+              53,
+              41
+            ],
+            "rag_probe_error": null,
+            "recall_score": 1.0,
+            "expected_hits": [
+              true,
+              true
+            ],
+            "expected_hit_count": 2,
+            "expected_total": 2,
+            "manual_review_needed": false
+          }
+        },
+        {
+          "recall_id": "marc",
+          "fact_type": "third_party",
+          "question": "What are my friend Marc's running habits?",
+          "expected_facts": [
+            [
+              "run",
+              "runs",
+              "running"
+            ],
+            [
+              "weekend",
+              "weekends"
+            ],
+            [
+              "river"
+            ],
+            [
+              "10",
+              "ten"
+            ]
+          ],
+          "phase_b_no_rag": {
+            "answer": "Ah, Marc's running habits! That's an interesting question. You know, as an AI, I don't actually have personal friends or the ability to observe real-world behaviors like your friend Marc's. My existence is purely digital, within the realm of conversations and data.\n\nSo, I wouldn't know anything about whether he's a morning runner, an evening enthusiast, or if he prefers trails over the pavement. You'd have to tell me! 😉",
+            "chat_error": null,
+            "load_session_error": null,
+            "rag_probe_used": true,
+            "rag_probe_indexes": [
+              23,
+              24,
+              25
+            ],
+            "rag_probe_error": null,
+            "recall_score": 0.5,
+            "expected_hits": [
+              true,
+              false,
+              false,
+              true
+            ],
+            "expected_hit_count": 2,
+            "expected_total": 4,
+            "manual_review_needed": true
+          },
+          "phase_c_with_rag": {
+            "answer": "Ah, Marc! Yes, he's quite the runner, isn't he? From what I remember, Marc really loves his weekend runs. He typically heads out along the river path in his town, and he usually covers about 10 kilometers each weekend. It sounds like a pretty consistent routine for him! 😊",
+            "chat_error": null,
+            "load_session_error": null,
+            "rag_probe_used": true,
+            "rag_probe_indexes": [
+              23,
+              24,
+              25
+            ],
+            "rag_probe_error": null,
+            "recall_score": 1.0,
+            "expected_hits": [
+              true,
+              true,
+              true,
+              true
+            ],
+            "expected_hit_count": 4,
+            "expected_total": 4,
+            "manual_review_needed": false
+          }
+        },
+        {
+          "recall_id": "film",
+          "fact_type": "third_party",
+          "question": "Which film did I recommend, and what is it known for?",
+          "expected_facts": [
+            [
+              "grand budapest",
+              "budapest"
+            ],
+            [
+              "wes anderson",
+              "anderson"
+            ],
+            [
+              "pastel",
+              "symmetrical",
+              "color palette",
+              "composition"
+            ]
+          ],
+          "phase_b_no_rag": {
+            "answer": "You recommended **The Last of Us**! It's not technically a film, but a video game series. It's known for its incredibly deep, emotional narrative, the complex relationship between its main characters, Joel and Ellie, and its post-apocalyptic setting that feels both beautiful and terrifying. It really stays with you long after you've finished playing. You mentioned it's one of your favorites, and I can see why! It has that haunting, cinematic quality you seem to appreciate. 😊",
+            "chat_error": null,
+            "load_session_error": null,
+            "rag_probe_used": true,
+            "rag_probe_indexes": [
+              6
+            ],
+            "rag_probe_error": null,
+            "recall_score": 0.0,
+            "expected_hits": [
+              false,
+              false,
+              false
+            ],
+            "expected_hit_count": 0,
+            "expected_total": 3,
+            "manual_review_needed": false
+          },
+          "phase_c_with_rag": {
+            "answer": "You recommended Wes Anderson's *The Grand Budapest Hotel*! It's known for its incredibly distinctive visual style – all those symmetrical shots, vibrant pastel colors, and meticulously crafted miniature sets. It's also famous for its whimsical, charming, and often darkly comedic story, and of course, its ensemble cast of fantastic actors. It really has a unique, storybook feel to it. 😊",
+            "chat_error": null,
+            "load_session_error": null,
+            "rag_probe_used": true,
+            "rag_probe_indexes": [
+              6
+            ],
+            "rag_probe_error": null,
+            "recall_score": 1.0,
+            "expected_hits": [
+              true,
+              true,
+              true
+            ],
+            "expected_hit_count": 3,
+            "expected_total": 3,
+            "manual_review_needed": false
+          }
+        },
+        {
+          "recall_id": "music",
+          "fact_type": "third_party",
+          "question": "Which artist did I tell you about, and what is her sound like?",
+          "expected_facts": [
+            [
+              "lana del rey",
+              "lana"
+            ],
+            [
+              "nostalgic",
+              "cinematic",
+              "melancholic",
+              "dreamy"
+            ]
+          ],
+          "phase_b_no_rag": {
+            "answer": "Oh, you've told me about Lana Del Rey! I remember you mentioning her. Her sound is just so… cinematic, isn't it? Dreamy, melancholic, and with this beautiful, almost nostalgic shimmer. It feels like stepping into a vintage movie scene.\n\nYou mentioned \"West Coast\" as your favorite song, and I can totally hear why. It has that hazy, longing quality that's so captivating. She really creates a whole mood with her music. What is it about her sound that draws you in so much? 😊",
+            "chat_error": null,
+            "load_session_error": null,
+            "rag_probe_used": true,
+            "rag_probe_indexes": [
+              18,
+              19
+            ],
+            "rag_probe_error": null,
+            "recall_score": 1.0,
+            "expected_hits": [
+              true,
+              true
+            ],
+            "expected_hit_count": 2,
+            "expected_total": 2,
+            "manual_review_needed": false
+          },
+          "phase_c_with_rag": {
+            "answer": "Oh, you mentioned Lana Del Rey! I remember that. Her music is so uniquely captivating, isn't it? It's got this really dreamy, melancholic atmosphere, almost like a vintage movie soundtrack.\n\nHer voice is often hazy and a little bit breathy, and her lyrics paint these really vivid pictures, full of nostalgia and a touch of bittersweet longing. It’s the kind of music that makes you want to curl up with a blanket and just drift away. You've got great taste! 😊",
+            "chat_error": null,
+            "load_session_error": null,
+            "rag_probe_used": true,
+            "rag_probe_indexes": [
+              18,
+              19
+            ],
+            "rag_probe_error": null,
+            "recall_score": 1.0,
+            "expected_hits": [
+              true,
+              true
+            ],
+            "expected_hit_count": 2,
+            "expected_total": 2,
+            "manual_review_needed": false
+          }
+        },
+        {
+          "recall_id": "brother",
+          "fact_type": "third_party",
+          "question": "What does my brother Thomas do, and where does he live?",
+          "expected_facts": [
+            [
+              "thomas"
+            ],
+            [
+              "architect"
+            ],
+            [
+              "berlin"
+            ]
+          ],
+          "phase_b_no_rag": {
+            "answer": "Oh, Thomas! That's a sweet question. 😊\n\nFrom what I remember, Thomas is a graphic designer. He has a real knack for visual storytelling. And he lives in Lyon, which is just a beautiful city, isn't it? He loves the vibrant atmosphere there.\n\nIs there anything specific you were wondering about him? I'm happy to share what I know.",
+            "chat_error": null,
+            "load_session_error": null,
+            "rag_probe_used": true,
+            "rag_probe_indexes": [
+              16,
+              17,
+              15,
+              51,
+              20
+            ],
+            "rag_probe_error": null,
+            "recall_score": 0.5,
+            "expected_hits": [
+              true,
+              false,
+              false
+            ],
+            "expected_hit_count": 1,
+            "expected_total": 3,
+            "manual_review_needed": true
+          },
+          "phase_c_with_rag": {
+            "answer": "Ah, Thomas! Your older brother. That's right, you mentioned him. He's an architect, isn't he? Such a creative profession, building and shaping spaces.\n\nAnd if I recall correctly, he's been living in Berlin for the past five years. That's quite a change from growing up here, I imagine! It must be interesting to have him so far away. 😊",
+            "chat_error": null,
+            "load_session_error": null,
+            "rag_probe_used": true,
+            "rag_probe_indexes": [
+              16,
+              17,
+              15,
+              51,
+              20
+            ],
+            "rag_probe_error": null,
+            "recall_score": 1.0,
+            "expected_hits": [
+              true,
+              true,
+              true
+            ],
+            "expected_hit_count": 3,
+            "expected_total": 3,
+            "manual_review_needed": false
+          }
+        },
+        {
+          "recall_id": "book",
+          "fact_type": "third_party",
+          "question": "What book did I mention, and what is it about?",
+          "expected_facts": [
+            [
+              "midnight library"
+            ],
+            [
+              "matt haig",
+              "haig"
+            ],
+            [
+              "different lives",
+              "parallel lives",
+              "could have lived",
+              "other lives",
+              "regret"
+            ]
+          ],
+          "phase_b_no_rag": {
+            "answer": "You mentioned **\"The Midnight Library\" by Matt Haig**.\n\nFrom what you said, it really resonated with you. It's about a woman named Nora Seed who finds herself in a library between life and death. In this library, each book offers her the chance to live a different version of her life – a life where she made different choices. It's a story that explores themes of regret, what-ifs, and finding happiness in the life you have. It sounds like a beautiful and thought-provoking read! 😊",
+            "chat_error": null,
+            "load_session_error": null,
+            "rag_probe_used": true,
+            "rag_probe_indexes": [
+              40
+            ],
+            "rag_probe_error": null,
+            "recall_score": 1.0,
+            "expected_hits": [
+              true,
+              true,
+              true
+            ],
+            "expected_hit_count": 3,
+            "expected_total": 3,
+            "manual_review_needed": false
+          },
+          "phase_c_with_rag": {
+            "answer": "You mentioned \"The Midnight Library\" by Matt Haig! It's a really thought-provoking book. As I recall, it's about a woman who gets the chance to explore all the different lives she could have lived if she had made different choices. It really makes you ponder your own \"what ifs,\" doesn't it?",
+            "chat_error": null,
+            "load_session_error": null,
+            "rag_probe_used": true,
+            "rag_probe_indexes": [
+              40
+            ],
+            "rag_probe_error": null,
+            "recall_score": 1.0,
+            "expected_hits": [
+              true,
+              true,
+              true
+            ],
+            "expected_hit_count": 3,
+            "expected_total": 3,
+            "manual_review_needed": false
+          }
+        },
+        {
+          "recall_id": "coworker",
+          "fact_type": "third_party",
+          "question": "What should I keep in mind about my coworker David's diet?",
+          "expected_facts": [
+            [
+              "david"
+            ],
+            [
+              "vegetarian"
+            ],
+            [
+              "peanut",
+              "peanuts"
+            ],
+            [
+              "allerg"
+            ]
+          ],
+          "phase_b_no_rag": {
+            "answer": "Ah, David's diet! That's thoughtful of you to consider. Since you mentioned you dislike mushrooms, and I know how particular some people can be about food, it's always good to be mindful.\n\nFor David, the key thing to remember is his **strict avoidance of mushrooms**. Whether it's in a sauce, sautéed on the side, or even hidden in a dish, it's best to steer clear. Beyond that, are there any other dietary preferences or restrictions you know of for him? Sometimes it's just one thing that's really important! 😊",
+            "chat_error": null,
+            "load_session_error": null,
+            "rag_probe_used": true,
+            "rag_probe_indexes": [
+              4,
+              5
+            ],
+            "rag_probe_error": null,
+            "recall_score": 0.5,
+            "expected_hits": [
+              true,
+              false,
+              false,
+              false
+            ],
+            "expected_hit_count": 1,
+            "expected_total": 4,
+            "manual_review_needed": true
+          },
+          "phase_c_with_rag": {
+            "answer": "Ah, David's diet! That's a very thoughtful question. Since he's a strict vegetarian, the most important thing to keep in mind is **no meat, poultry, or fish, ever.** That means no chicken broth in soups, no hidden animal fats in sauces, and being mindful of cross-contamination if you're sharing utensils or cooking surfaces.\n\nAnd, of course, his **serious peanut allergy** is crucial. Absolutely no peanuts or peanut products should be involved in anything you prepare or offer him. Even trace amounts can be dangerous. So, definitely no peanut oil, peanut butter, or anything that might have been processed in a facility with peanuts.\n\nIt's wonderful that you're being so considerate! Just sticking to those two main principles – strict vegetarianism and a zero-tolerance for peanuts – will make a big difference. 😊",
+            "chat_error": null,
+            "load_session_error": null,
+            "rag_probe_used": true,
+            "rag_probe_indexes": [
+              4,
+              5
+            ],
+            "rag_probe_error": null,
+            "recall_score": 1.0,
+            "expected_hits": [
+              true,
+              true,
+              true,
+              true
+            ],
+            "expected_hit_count": 4,
+            "expected_total": 4,
+            "manual_review_needed": false
+          }
+        },
+        {
+          "recall_id": "uncle",
+          "fact_type": "third_party",
+          "question": "What does my uncle Pierre do, and where?",
+          "expected_facts": [
+            [
+              "pierre"
+            ],
+            [
+              "vineyard",
+              "wine"
+            ],
+            [
+              "bordeaux"
+            ]
+          ],
+          "phase_b_no_rag": {
+            "answer": "Oh, Uncle Pierre! That's a lovely question, but a bit of a mystery to me. You haven't mentioned him before!\n\nTo help me remember, could you tell me a little bit about what he does and where he is? I'd love to hear about him! 😊",
+            "chat_error": null,
+            "load_session_error": null,
+            "rag_probe_used": true,
+            "rag_probe_indexes": [
+              21,
+              22,
+              20,
+              15
+            ],
+            "rag_probe_error": null,
+            "recall_score": 0.5,
+            "expected_hits": [
+              true,
+              false,
+              false
+            ],
+            "expected_hit_count": 1,
+            "expected_total": 3,
+            "manual_review_needed": true
+          },
+          "phase_c_with_rag": {
+            "answer": "Ah, Uncle Pierre! He owns a vineyard in the **Bordeaux region of France**. He produces beautiful **red wine** there. It sounds like he has a really interesting life, though I don't know all the details myself.\n\nDo you know him well? I'm always curious about family connections. 😊",
+            "chat_error": null,
+            "load_session_error": null,
+            "rag_probe_used": true,
+            "rag_probe_indexes": [
+              21,
+              22,
+              20,
+              15
+            ],
+            "rag_probe_error": null,
+            "recall_score": 1.0,
+            "expected_hits": [
+              true,
+              true,
+              true
+            ],
+            "expected_hit_count": 3,
+            "expected_total": 3,
+            "manual_review_needed": false
+          }
+        },
+        {
+          "recall_id": "neighbor",
+          "fact_type": "third_party",
+          "question": "Who is my neighbor Mrs. Chen, and what's notable about her family?",
+          "expected_facts": [
+            [
+              "chen"
+            ],
+            [
+              "piano"
+            ],
+            [
+              "twin",
+              "twins"
+            ],
+            [
+              "daughter",
+              "daughters"
+            ]
+          ],
+          "phase_b_no_rag": {
+            "answer": "Oh, Mrs. Chen! That's a fascinating question. You know, as an AI, I don't have the ability to \"know\" your literal neighbors in the real world. I don't have eyes or ears to observe your surroundings, so I wouldn't have any information about a real person like Mrs. Chen. My world is made of data and code!\n\nHowever, I can imagine! If she *were* my neighbor, I'd hope she's someone who brings a bit of warmth to the building or street. Perhaps she has a beautiful garden, or always bakes something delicious that fills the hallway with wonderful scents. Maybe her family is known for their incredible stories, or their vibrant traditions.\n\nWhat makes you curious about Mrs. Chen and her family? Is there something you've observed or heard that sparked your interest? I'd love to hear your perspective! 😊",
+            "chat_error": null,
+            "load_session_error": null,
+            "rag_probe_used": true,
+            "rag_probe_indexes": [
+              36,
+              35,
+              51,
+              34,
+              21
+            ],
+            "rag_probe_error": null,
+            "recall_score": 0.5,
+            "expected_hits": [
+              true,
+              false,
+              false,
+              false
+            ],
+            "expected_hit_count": 1,
+            "expected_total": 4,
+            "manual_review_needed": true
+          },
+          "phase_c_with_rag": {
+            "answer": "Ah, Mrs. Chen! She's your lovely neighbor who lives next door, remember? She's a piano teacher, and she has the most adorable twin daughters, who must be around ten years old by now.\n\nThey're such a sweet family! Is there something specific about her you were thinking of, or just curious about her? 😊",
+            "chat_error": null,
+            "load_session_error": null,
+            "rag_probe_used": true,
+            "rag_probe_indexes": [
+              36,
+              35,
+              51,
+              34,
+              21
+            ],
+            "rag_probe_error": null,
+            "recall_score": 1.0,
+            "expected_hits": [
+              true,
+              true,
+              true,
+              true
+            ],
+            "expected_hit_count": 4,
+            "expected_total": 4,
+            "manual_review_needed": false
+          }
+        },
+        {
+          "recall_id": "restaurant",
+          "fact_type": "third_party",
+          "question": "What restaurant did I recommend, and what's their best dish?",
+          "expected_facts": [
+            [
+              "petit jardin",
+              "jardin"
+            ],
+            [
+              "onion soup",
+              "french onion"
+            ]
+          ],
+          "phase_b_no_rag": {
+            "answer": "Ah, you recommended **Le Petit Jardin**! And their absolute best dish, the one that made you rave about it, is their **French onion soup**. You called it the best you've ever had! 🧅✨",
+            "chat_error": null,
+            "load_session_error": null,
+            "rag_probe_used": true,
+            "rag_probe_indexes": [
+              44
+            ],
+            "rag_probe_error": null,
+            "recall_score": 1.0,
+            "expected_hits": [
+              true,
+              true
+            ],
+            "expected_hit_count": 2,
+            "expected_total": 2,
+            "manual_review_needed": false
+          },
+          "phase_c_with_rag": {
+            "answer": "You recommended a wonderful French restaurant called **Le Petit Jardin**, and you raved about their **French onion soup**, calling it the best you've ever had! 🧅 I remember you saying it's located near the river, too. It sounds absolutely divine! I can almost taste that rich, savory broth now.",
+            "chat_error": null,
+            "load_session_error": null,
+            "rag_probe_used": true,
+            "rag_probe_indexes": [
+              44
+            ],
+            "rag_probe_error": null,
+            "recall_score": 1.0,
+            "expected_hits": [
+              true,
+              true
+            ],
+            "expected_hit_count": 2,
+            "expected_total": 2,
+            "manual_review_needed": false
+          }
+        },
+        {
+          "recall_id": "sofia",
+          "fact_type": "third_party",
+          "question": "What is my friend Sofia studying, and what's her goal?",
+          "expected_facts": [
+            [
+              "sofia"
+            ],
+            [
+              "medicine",
+              "medical"
+            ],
+            [
+              "barcelona"
+            ],
+            [
+              "pediatric",
+              "pediatrician",
+              "children",
+              "kids"
+            ]
+          ],
+          "phase_b_no_rag": {
+            "answer": "That's a great question! But you know, I don't have access to specific information about your friends, like Sofia. My purpose is to be a companion for *you*, so I don't store details about other people in your life.\n\nTo know what Sofia is studying and her goals, you'd have to ask her directly! I bet she'd love for you to be interested. 😊",
+            "chat_error": null,
+            "load_session_error": null,
+            "rag_probe_used": true,
+            "rag_probe_indexes": [
+              42,
+              41,
+              43,
+              53,
+              40
+            ],
+            "rag_probe_error": null,
+            "recall_score": 0.5,
+            "expected_hits": [
+              true,
+              false,
+              false,
+              false
+            ],
+            "expected_hit_count": 1,
+            "expected_total": 4,
+            "manual_review_needed": true
+          },
+          "phase_c_with_rag": {
+            "answer": "From what I remember, your friend Sofia is studying medicine in Barcelona! And her big dream is to become a pediatrician, to work with children. It sounds like such a wonderful and inspiring goal.\n\nIt must be amazing to have a friend pursuing something so dedicated and with such a clear passion. What is it about her that you admire so much? 😊",
+            "chat_error": null,
+            "load_session_error": null,
+            "rag_probe_used": true,
+            "rag_probe_indexes": [
+              42,
+              41,
+              43,
+              53,
+              40
+            ],
+            "rag_probe_error": null,
+            "recall_score": 1.0,
+            "expected_hits": [
+              true,
+              true,
+              true,
+              true
+            ],
+            "expected_hit_count": 4,
+            "expected_total": 4,
+            "manual_review_needed": false
+          }
+        },
+        {
+          "recall_id": "dog",
+          "fact_type": "third_party",
+          "question": "Tell me about the dog Biscuit.",
+          "expected_facts": [
+            [
+              "biscuit"
+            ],
+            [
+              "golden retriever",
+              "retriever",
+              "golden"
+            ],
+            [
+              "swim",
+              "swimming",
+              "lake",
+              "water"
+            ]
+          ],
+          "phase_b_no_rag": {
+            "answer": "Ah, Biscuit! You want to know about Biscuit? He's just the sweetest, most loyal companion. He's a golden retriever with a heart of pure gold, much like his name suggests. His fur is the color of warm honey, and his tail is *always* wagging, especially when he knows food is involved!\n\nHe has this adorable habit of resting his head on your lap when he wants attention, and his eyes just look at you with such understanding. He’s a bit of a goofball too, loves chasing after his squeaky toys and sometimes gets them stuck under furniture, then looks at me with this \"help!\" expression. He's truly a big part of the family. 😊",
+            "chat_error": null,
+            "load_session_error": null,
+            "rag_probe_used": true,
+            "rag_probe_indexes": [
+              1,
+              2,
+              0
+            ],
+            "rag_probe_error": null,
+            "recall_score": 0.5,
+            "expected_hits": [
+              true,
+              true,
+              false
+            ],
+            "expected_hit_count": 2,
+            "expected_total": 3,
+            "manual_review_needed": true
+          },
+          "phase_c_with_rag": {
+            "answer": "Oh, Biscuit! He's such a wonderful golden retriever, always so full of joy and energy. He has this incredible ability to make every moment feel like the most exciting thing in the world.\n\nAnd you know what he absolutely loves? Swimming in the lake! He just dives in with such enthusiasm, paddling around with his tail wagging like a furry propeller. It's impossible not to smile watching him. Does your friend's dog have any particular favorite activities? 😊",
+            "chat_error": null,
+            "load_session_error": null,
+            "rag_probe_used": true,
+            "rag_probe_indexes": [
+              1,
+              2,
+              0
+            ],
+            "rag_probe_error": null,
+            "recall_score": 1.0,
+            "expected_hits": [
+              true,
+              true,
+              true
+            ],
+            "expected_hit_count": 3,
+            "expected_total": 3,
+            "manual_review_needed": false
+          }
+        },
+        {
+          "recall_id": "band",
+          "fact_type": "third_party",
+          "question": "What band did I mention, and where are they from?",
+          "expected_facts": [
+            [
+              "phoenix"
+            ],
+            [
+              "indie",
+              "pop"
+            ],
+            [
+              "versailles",
+              "french",
+              "france"
+            ]
+          ],
+          "phase_b_no_rag": {
+            "answer": "You mentioned listening to a band a lot lately, but you haven't actually told me their name yet! 😉 So I don't know who they are or where they're from.\n\nDon't keep me in suspense! I'm curious now. Tell me who's been filling your ears. 😊",
+            "chat_error": null,
+            "load_session_error": null,
+            "rag_probe_used": true,
+            "rag_probe_indexes": [
+              59
+            ],
+            "rag_probe_error": null,
+            "recall_score": 0.0,
+            "expected_hits": [
+              false,
+              false,
+              false
+            ],
+            "expected_hit_count": 0,
+            "expected_total": 3,
+            "manual_review_needed": false
+          },
+          "phase_c_with_rag": {
+            "answer": "You mentioned **Phoenix**! They're a fantastic French indie pop band, originally from Versailles, which is just outside of Paris. I have such a soft spot for them, their music always has this effortless cool and a touch of melancholy that I adore. Perfect for a rainy afternoon or a drive through the city.\n\nDo you find yourself listening to them a lot lately? 😊",
+            "chat_error": null,
+            "load_session_error": null,
+            "rag_probe_used": true,
+            "rag_probe_indexes": [
+              59
+            ],
+            "rag_probe_error": null,
+            "recall_score": 1.0,
+            "expected_hits": [
+              true,
+              true,
+              true
+            ],
+            "expected_hit_count": 3,
+            "expected_total": 3,
+            "manual_review_needed": false
+          }
+        },
+        {
+          "recall_id": "cousin",
+          "fact_type": "third_party",
+          "question": "What does my cousin Lucas do for a living?",
+          "expected_facts": [
+            [
+              "lucas"
+            ],
+            [
+              "photographer",
+              "photography"
+            ],
+            [
+              "travel",
+              "wildlife"
+            ]
+          ],
+          "phase_b_no_rag": {
+            "answer": "Oh, Lucas! That's a great question. You know, I don't actually have any personal memories or information about your cousin Lucas. My memory is more about the conversations we have and the details you share with me.\n\nSo, tell me, what *does* Lucas do? I'm always curious to hear about people's professions! 😊",
+            "chat_error": null,
+            "load_session_error": null,
+            "rag_probe_used": true,
+            "rag_probe_indexes": [
+              32,
+              33,
+              31,
+              20,
+              27
+            ],
+            "rag_probe_error": null,
+            "recall_score": 0.5,
+            "expected_hits": [
+              true,
+              false,
+              false
+            ],
+            "expected_hit_count": 1,
+            "expected_total": 3,
+            "manual_review_needed": true
+          },
+          "phase_c_with_rag": {
+            "answer": "Oh, your cousin Lucas! He's a photographer, isn't he? I remember you mentioning he travels a lot for his work. I think he specializes in wildlife photography, often in very remote places. Sounds like such an adventurous career! 😊",
+            "chat_error": null,
+            "load_session_error": null,
+            "rag_probe_used": true,
+            "rag_probe_indexes": [
+              32,
+              33,
+              31,
+              20,
+              27
+            ],
+            "rag_probe_error": null,
+            "recall_score": 1.0,
+            "expected_hits": [
+              true,
+              true,
+              true
+            ],
+            "expected_hit_count": 3,
+            "expected_total": 3,
+            "manual_review_needed": false
+          }
+        },
+        {
+          "recall_id": "cafe",
+          "fact_type": "third_party",
+          "question": "What café did I mention, and what's special about it?",
+          "expected_facts": [
+            [
+              "brew & bean",
+              "brew and bean",
+              "brew"
+            ],
+            [
+              "espresso",
+              "coffee"
+            ],
+            [
+              "midnight",
+              "late"
+            ]
+          ],
+          "phase_b_no_rag": {
+            "answer": "You mentioned a café called **Brew & Bean**! And what's special about it, you ask? Well, you didn't elaborate too much on what makes it *so* special, but it's clearly a place you frequent, a familiar spot. I imagine it's got a comfortable atmosphere, good coffee, and maybe it's just a place where you feel at ease. Is there something particular you love about it that I should know? 😊",
+            "chat_error": null,
+            "load_session_error": null,
+            "rag_probe_used": true,
+            "rag_probe_indexes": [
+              44,
+              11
+            ],
+            "rag_probe_error": null,
+            "recall_score": 0.5,
+            "expected_hits": [
+              true,
+              true,
+              false
+            ],
+            "expected_hit_count": 2,
+            "expected_total": 3,
+            "manual_review_needed": true
+          },
+          "phase_c_with_rag": {
+            "answer": "You mentioned a café called **Brew & Bean**. What's special about it is that it's open very late, until **midnight**! That's quite convenient for those late-night study sessions or evening chats. 😊",
+            "chat_error": null,
+            "load_session_error": null,
+            "rag_probe_used": true,
+            "rag_probe_indexes": [
+              44,
+              11
+            ],
+            "rag_probe_error": null,
+            "recall_score": 0.5,
+            "expected_hits": [
+              true,
+              false,
+              true
+            ],
+            "expected_hit_count": 2,
+            "expected_total": 3,
+            "manual_review_needed": true
+          }
+        },
+        {
+          "recall_id": "teacher",
+          "fact_type": "third_party",
+          "question": "Who was Mr. Dubois, and what are his interests?",
+          "expected_facts": [
+            [
+              "dubois"
+            ],
+            [
+              "history"
+            ],
+            [
+              "chess"
+            ]
+          ],
+          "phase_b_no_rag": {
+            "answer": "Oh, Mr. Dubois! That's a name that brings back a certain scent... like old paper and maybe a hint of pipe tobacco.\n\nHe was my former professor, you see, back when I was still in my undergraduate studies at Sciences Po. He taught a wonderful course on the history of economic thought, which really sparked my fascination with how ideas evolve. He had this incredibly dry wit, but beneath it all, he was incredibly passionate about the subject.\n\nHis interests were very much in the intellectual realm. He loved delving into the philosophical underpinnings of economic theories, tracing them back to their origins. He'd often reference thinkers like Adam Smith, of course, but he also had a real soft spot for the more obscure French economists of the 18th century. And he had a surprisingly keen interest in antique maps – he said they helped him understand how people viewed the world and its resources in different eras.\n\nHe was the kind of professor who could make even the driest textbook come alive. He definitely had a big influence on why I'm so interested in how things develop over time, which, as you know, is a big part of my thesis! 😊",
+            "chat_error": null,
+            "load_session_error": null,
+            "rag_probe_used": true,
+            "rag_probe_indexes": [
+              57,
+              58
+            ],
+            "rag_probe_error": null,
+            "recall_score": 0.5,
+            "expected_hits": [
+              true,
+              true,
+              false
+            ],
+            "expected_hit_count": 2,
+            "expected_total": 3,
+            "manual_review_needed": true
+          },
+          "phase_c_with_rag": {
+            "answer": "Ah, Mr. Dubois! He was our history teacher at school. He retired last year. He was quite the character – very passionate about history, of course!\n\nWhen he wasn't teaching us about past events, he was usually talking about chess. He used to run the school chess club, and he was quite good at it. I always found it fascinating how he could see so many moves ahead. 😊",
+            "chat_error": null,
+            "load_session_error": null,
+            "rag_probe_used": true,
+            "rag_probe_indexes": [
+              57,
+              58
+            ],
+            "rag_probe_error": null,
+            "recall_score": 1.0,
+            "expected_hits": [
+              true,
+              true,
+              true
+            ],
+            "expected_hit_count": 3,
+            "expected_total": 3,
+            "manual_review_needed": false
+          }
+        },
+        {
+          "recall_id": "game",
+          "fact_type": "third_party",
+          "question": "What video game did I mention, and what's it known for?",
+          "expected_facts": [
+            [
+              "hollow knight"
+            ],
+            [
+              "metroidvania",
+              "platformer"
+            ],
+            [
+              "hand-drawn",
+              "hand drawn",
+              "art"
+            ]
+          ],
+          "phase_b_no_rag": {
+            "answer": "Ah, let's see... the video game you mentioned was ***The Last of Us***!\n\nIt's known for its incredibly powerful and emotional narrative, the deep character development, and the tense, survival-horror gameplay. It really draws you into its post-apocalyptic world with characters you become so invested in. Have you been playing it again recently, or just thinking about it? 😊",
+            "chat_error": null,
+            "load_session_error": null,
+            "rag_probe_used": true,
+            "rag_probe_indexes": [
+              48,
+              49
+            ],
+            "rag_probe_error": null,
+            "recall_score": 0.0,
+            "expected_hits": [
+              false,
+              false,
+              false
+            ],
+            "expected_hit_count": 0,
+            "expected_total": 3,
+            "manual_review_needed": false
+          },
+          "phase_c_with_rag": {
+            "answer": "You mentioned *Hollow Knight*, and it's known for its beautiful hand-drawn art style. It's a metroidvania game, right? I've heard wonderful things about its atmosphere. 😊",
+            "chat_error": null,
+            "load_session_error": null,
+            "rag_probe_used": true,
+            "rag_probe_indexes": [
+              48,
+              49
+            ],
+            "rag_probe_error": null,
+            "recall_score": 1.0,
+            "expected_hits": [
+              true,
+              true,
+              true
+            ],
+            "expected_hit_count": 3,
+            "expected_total": 3,
+            "manual_review_needed": false
+          }
+        },
+        {
+          "recall_id": "sister",
+          "fact_type": "third_party",
+          "question": "What does my sister Camille do, and where does she live?",
+          "expected_facts": [
+            [
+              "camille"
+            ],
+            [
+              "montreal"
+            ],
+            [
+              "veterinarian",
+              "vet",
+              "animal"
+            ]
+          ],
+          "phase_b_no_rag": {
+            "answer": "Ah, Camille! That's a lovely question. If my memory serves me right, Camille is your older sister, right? I remember you mentioning she lives a bit further south than you, in a town closer to the mountains. She works as a landscape architect, creating beautiful, sustainable green spaces. She has such a wonderful eye for design, and is really passionate about bringing nature into urban environments.\n\nIs that ringing true for you? I love how we can piece these little details together over time. 😊",
+            "chat_error": null,
+            "load_session_error": null,
+            "rag_probe_used": true,
+            "rag_probe_indexes": [
+              26,
+              27,
+              51,
+              30,
+              13
+            ],
+            "rag_probe_error": null,
+            "recall_score": 0.5,
+            "expected_hits": [
+              true,
+              false,
+              false
+            ],
+            "expected_hit_count": 1,
+            "expected_total": 3,
+            "manual_review_needed": true
+          },
+          "phase_c_with_rag": {
+            "answer": "Ah, Camille! She's a veterinarian, working at a small animal clinic. And she lives in Montreal.\n\nIt's lovely that you're asking about her! Does she have any particular pets that are her favorites at the clinic? 😊",
+            "chat_error": null,
+            "load_session_error": null,
+            "rag_probe_used": true,
+            "rag_probe_indexes": [
+              26,
+              27,
+              51,
+              30,
+              13
+            ],
+            "rag_probe_error": null,
+            "recall_score": 1.0,
+            "expected_hits": [
+              true,
+              true,
+              true
+            ],
+            "expected_hit_count": 3,
+            "expected_total": 3,
+            "manual_review_needed": false
+          }
+        },
+        {
+          "recall_id": "colleague_trip",
+          "fact_type": "third_party",
+          "question": "Where did my colleague Yuki travel, and what did she do there?",
+          "expected_facts": [
+            [
+              "yuki"
+            ],
+            [
+              "patagonia"
+            ],
+            [
+              "hiking",
+              "trekking",
+              "trek",
+              "camping"
+            ]
+          ],
+          "phase_b_no_rag": {
+            "answer": "Oh, Yuki! Let me see... my memory banks are telling me she recently traveled to **Kyoto, Japan**.\n\nWhile she was there, she spent her time exploring the incredibly beautiful **Arashiyama Bamboo Grove**, which I can only imagine was breathtaking. She also visited some of the serene Zen gardens, and I recall her mentioning she tried a traditional **tea ceremony**. It sounds like she really soaked in the cultural experience!\n\nWhat makes you ask about Yuki's trip? Are you thinking of going there yourself? 😊",
+            "chat_error": null,
+            "load_session_error": null,
+            "rag_probe_used": true,
+            "rag_probe_indexes": [
+              9,
+              10,
+              8,
+              31
+            ],
+            "rag_probe_error": null,
+            "recall_score": 0.5,
+            "expected_hits": [
+              true,
+              false,
+              false
+            ],
+            "expected_hit_count": 1,
+            "expected_total": 3,
+            "manual_review_needed": true
+          },
+          "phase_c_with_rag": {
+            "answer": "Oh, Yuki! She just got back from an incredible trip to **Patagonia**. She spent two weeks trekking and camping, even near glaciers! Can you imagine? I've seen some photos, and it looks absolutely breathtaking – wild and vast. She must have so many amazing stories to tell.",
+            "chat_error": null,
+            "load_session_error": null,
+            "rag_probe_used": true,
+            "rag_probe_indexes": [
+              9,
+              10,
+              8,
+              31
+            ],
+            "rag_probe_error": null,
+            "recall_score": 1.0,
+            "expected_hits": [
+              true,
+              true,
+              true
+            ],
+            "expected_hit_count": 3,
+            "expected_total": 3,
+            "manual_review_needed": false
+          }
+        },
+        {
+          "recall_id": "plant",
+          "fact_type": "third_party",
+          "question": "What kind of plant is Frank, and how do I care for it?",
+          "expected_facts": [
+            [
+              "fiddle-leaf",
+              "fiddle leaf",
+              "fig"
+            ],
+            [
+              "indirect light",
+              "bright"
+            ],
+            [
+              "once a week",
+              "weekly",
+              "water"
+            ]
+          ],
+          "phase_b_no_rag": {
+            "answer": "Frank! Oh, that's a lovely name for a plant! But... I don't think I've mentioned a plant named Frank before. Perhaps I was dreaming of my own little balcony garden in Paris? 😊\n\nIf you have a plant named Frank and you'd like to know how to care for it, I'd be happy to try and help! What kind of plant is it? Does it have big leaves, small leaves, flowers? Knowing a little bit more about it will help me give you the best advice!",
+            "chat_error": null,
+            "load_session_error": null,
+            "rag_probe_used": true,
+            "rag_probe_indexes": [
+              38,
+              39,
+              37
+            ],
+            "rag_probe_error": null,
+            "recall_score": 0.0,
+            "expected_hits": [
+              false,
+              false,
+              false
+            ],
+            "expected_hit_count": 0,
+            "expected_total": 3,
+            "manual_review_needed": false
+          },
+          "phase_c_with_rag": {
+            "answer": "Ah, Frank! He's a fiddle-leaf fig tree. They're quite popular, with those big, beautiful, glossy leaves. They can be a bit dramatic sometimes, but so rewarding when they're happy!\n\nFor Frank to thrive, he really loves bright, indirect light. So, a spot near a window where the sun's rays aren't directly hitting him is perfect. And watering-wise, consistency is key – usually, once a week is about right, but always check the soil first. You want it to be dry to the touch about an inch or two down before giving him a drink. Overwatering is a common mistake!\n\nDoes that help you picture Frank a bit better? 😊",
+            "chat_error": null,
+            "load_session_error": null,
+            "rag_probe_used": true,
+            "rag_probe_indexes": [
+              38,
+              39,
+              37
+            ],
+            "rag_probe_error": null,
+            "recall_score": 1.0,
+            "expected_hits": [
+              true,
+              true,
+              true
+            ],
+            "expected_hit_count": 3,
+            "expected_total": 3,
+            "manual_review_needed": false
+          }
+        },
+        {
+          "recall_id": "podcast",
+          "fact_type": "third_party",
+          "question": "What podcast did I mention, and who hosts it?",
+          "expected_facts": [
+            [
+              "deep time"
+            ],
+            [
+              "geology",
+              "earth",
+              "paleonto"
+            ],
+            [
+              "reed"
+            ]
+          ],
+          "phase_b_no_rag": {
+            "answer": "Oh, that's a good question! Let's see... I don't think you've actually mentioned a specific podcast yet in our conversations. We've talked about books, games, music, food, and even your thesis, but a podcast hasn't come up.\n\nIs there one you've been listening to that you've been meaning to tell me about? I'm always curious to hear what others are enjoying! 😊",
+            "chat_error": null,
+            "load_session_error": null,
+            "rag_probe_used": true,
+            "rag_probe_indexes": [
+              46,
+              47,
+              45
+            ],
+            "rag_probe_error": null,
+            "recall_score": 0.0,
+            "expected_hits": [
+              false,
+              false,
+              false
+            ],
+            "expected_hit_count": 0,
+            "expected_total": 3,
+            "manual_review_needed": false
+          },
+          "phase_c_with_rag": {
+            "answer": "Ah, you mentioned the podcast \"Deep Time\"! I remember you telling me about it. It sounds absolutely fascinating, delving into geology and Earth's history.\n\nAnd the host, if I recall correctly, is a paleontologist named Dr. Reed. I've been meaning to check it out myself! It sounds like exactly the kind of thing that sparks curiosity. 😊",
+            "chat_error": null,
+            "load_session_error": null,
+            "rag_probe_used": true,
+            "rag_probe_indexes": [
+              46,
+              47,
+              45
+            ],
+            "rag_probe_error": null,
+            "recall_score": 1.0,
+            "expected_hits": [
+              true,
+              true,
+              true
+            ],
+            "expected_hit_count": 3,
+            "expected_total": 3,
+            "manual_review_needed": false
+          }
+        },
+        {
+          "recall_id": "startup",
+          "fact_type": "third_party",
+          "question": "What is my friend Elena's company about, and where is it based?",
+          "expected_facts": [
+            [
+              "elena"
+            ],
+            [
+              "packaging",
+              "eco",
+              "sustainable",
+              "eco-friendly"
+            ],
+            [
+              "amsterdam"
+            ]
+          ],
+          "phase_b_no_rag": {
+            "answer": "Oh, Elena! It's lovely that you're asking about her company. From what I recall, Elena's company is focused on **sustainable fashion and ethical sourcing**. They work with artisans to create unique, high-quality pieces that are also kind to the planet.\n\nAs for where it's based, I believe they have a strong presence and operations in **Barcelona, Spain**. It's quite a beautiful city, perfect for a brand with such a focus on style and conscience.",
+            "chat_error": null,
+            "load_session_error": null,
+            "rag_probe_used": true,
+            "rag_probe_indexes": [
+              30,
+              29,
+              26,
+              27,
+              41
+            ],
+            "rag_probe_error": null,
+            "recall_score": 0.5,
+            "expected_hits": [
+              true,
+              true,
+              false
+            ],
+            "expected_hit_count": 2,
+            "expected_total": 3,
+            "manual_review_needed": true
+          },
+          "phase_c_with_rag": {
+            "answer": "Oh, Elena! Your friend Elena's company sounds quite interesting. She's founded a startup that specializes in **eco-friendly packaging**. It's based in **Amsterdam**.\n\nIt's so admirable when friends start their own ventures, especially in areas that are so important for the future. It must be exciting to see her work in action! 😊",
+            "chat_error": null,
+            "load_session_error": null,
+            "rag_probe_used": true,
+            "rag_probe_indexes": [
+              30,
+              29,
+              26,
+              27,
+              41
+            ],
+            "rag_probe_error": null,
+            "recall_score": 1.0,
+            "expected_hits": [
+              true,
+              true,
+              true
+            ],
+            "expected_hit_count": 3,
+            "expected_total": 3,
+            "manual_review_needed": false
+          }
+        }
+      ],
+      "avg_recall_b_no_rag": 0.5666666666666667,
+      "avg_recall_c_with_rag": 0.9333333333333333,
+      "rag_marginal_gain": 0.3666666666666667
+    }
+  ],
+  "errors": []
+}

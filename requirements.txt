@@ -1,0 +1,8 @@
+flask
+requests
+google-generativeai
+sentence-transformers
+faiss-cpu
+numpy
+langfuse
+python-dotenv
