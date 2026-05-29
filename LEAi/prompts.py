@@ -36,7 +36,9 @@ Return only the numeric rating (1–10) and a one-sentence justification.
 Examples:
 
 Example 1 (current message is trivial, context contains something relevant):
-Previous 4 messages:
+Previous 6 messages:
+AI: Hey, how's your day going?
+User: Not bad, just relaxing.
 AI: What's your phone number?
 User: My phone number is 0645957525.
 AI: Got it!
@@ -45,7 +47,9 @@ Current user message: "Haha, that's a funny question."
 Answer: 1 
 
 Example 2 (current message is relevant because of context):
-Previous 4 messages:
+Previous 6 messages:
+AI: I'd love to get to know you better.
+User: Sure, ask me anything.
 AI: What's your favorite color?
 User: Can you guess?
 AI: Is it blue?
@@ -54,7 +58,9 @@ Current user message: "Yes."
 Answer: 6
 
 Example 3 (current message is relevant because of context):
-Previous 4 messages:
+Previous 6 messages:
+AI: Do you have someone special in your life?
+User: Yeah, I do.
 AI: What's your girlfriend's name?
 User: I haven't told you yet.
 AI: I would love to know!
@@ -63,7 +69,9 @@ Current user message: "Mathilde."
 Rating: 8
 
 Example 4 (context is relevant, user message is not):
-Previous 4 messages:
+Previous 6 messages:
+AI: Tell me about the people close to you.
+User: Okay.
 AI: Who is your best friend?
 User: Sophie.
 AI: That's a nice name!
@@ -72,7 +80,9 @@ Current user message: "Thanks!"
 Answer: 1
 
 Example 5 (relevant context but current message is not memory-worthy):
-Previous 4 messages:
+Previous 6 messages:
+AI: I'd love to hear more about you.
+User: Sure.
 AI: Tell me about your family.
 User: My grandmother was very important to me.
 AI: Is she still around?
@@ -81,7 +91,9 @@ Current user message: "let's talk about something else"
 Answer: 1
 
 Example 6 (context and current message are both trivial):
-Previous 4 messages:
+Previous 6 messages:
+AI: Hi there!
+User: Hello.
 AI: How are you?
 User: Good!
 AI: How was your day?
@@ -90,7 +102,9 @@ Current user message: "Just okay."
 Answer: 2
 
 Example 7 (relevant context but current message is trivial):
-Previous 4 messages:
+Previous 6 messages:
+AI: Can I ask you something personal?
+User: Sure, go ahead.
 AI: Was it hard for you when your grandmother passed away?
 User: Yes, it was.
 AI: Thank you for sharing that.
@@ -100,7 +114,9 @@ Answer: 1
 
 Example 8 
 Example 1 (trivial laughter):
-Previous 4 messages:
+Previous 6 messages:
+AI: Hey, what's up?
+User: Not much.
 AI: What are you doing today?
 User: going to ride a horse.
 AI: It will be so much fun!
@@ -108,7 +124,7 @@ User: Haha.
 Current: "Haha"
 Answer: 1                
 
-Now, here are the 4 previous messages and the current user message:
+Now, here are the 6 previous messages and the current user message:
 {conversation_context}
 Current user message:{user_message}
 
